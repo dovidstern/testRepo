@@ -1,0 +1,115 @@
+@extra: ~"only screen and (min-width: 1200px)";
+@desktop: ~"only screen and (min-width: 992px) and (max-width: 1199px)";
+@tablet: ~"only screen and (min-width: 768px) and (max-width: 991px)";
+@phone: ~"only screen and (max-width: 767px)";
+@transition: 0.2s;
+@-ms-viewport{
+  width: device-width;
+}
+
+@headerHeight: 77px;
+@secondaryHeaderHeight: 70px;
+@leftMenuWidth: 281px;
+@mainContentBackground: #f5f7fb;
+@headerBackground: #fff;
+@secondSidebar: #fff;
+@linkColorShape: #00b8e5;
+@borderColor: #e3e6ec;      
+@hightLightColor: #92d569;
+@mainTextColor: #3e2e2e;
+@smallDesc: #8a8a8a;
+@linkColorText: #00a6ce;
+@activeIcon: #000;
+@textLinkColor: #4fa3d3;
+@catBgColor: #e5e8ed;
+@singleChatContainerWidth: 400px;
+@chatMessageInputHeight: 69px;
+
+.generate-percentage(@n, @i: 1) when (@i =< @n) {
+  &.perc-@{i} {
+    &:after {
+      width: (@i * 100% / @n);
+    }
+    .perc-text-holder {
+      right: ((100-@i) * 100% / @n);
+    }
+  }
+  .generate-percentage(@n, (@i + 1));
+}
+// the way how it is called
+//.generate-percentage(100);
+
+.border-radius(@brtl,@brtr,@brbr,@brbl) {
+  -webkit-border-top-left-radius: @brtl;
+     -moz-border-top-left-radius: @brtl;
+      -ms-border-top-left-radius: @brtl;
+       -o-border-top-left-radius: @brtl;
+          border-top-left-radius: @brtl;
+
+  -webkit-border-top-right-radius: @brtr;
+     -moz-border-top-right-radius: @brtr;
+      -ms-border-top-right-radius: @brtr;
+       -o-border-top-right-radius: @brtr;
+          border-top-right-radius: @brtr;
+
+  -webkit-border-bottom-right-radius: @brbr;
+     -moz-border-bottom-right-radius: @brbr;
+      -ms-border-bottom-right-radius: @brbr;
+       -o-border-bottom-right-radius: @brbr;
+          border-bottom-right-radius: @brbr;
+
+  -webkit-border-bottom-left-radius: @brbl;
+     -moz-border-bottom-left-radius: @brbl;
+      -ms-border-bottom-left-radius: @brbl;
+       -o-border-bottom-left-radius: @brbl;
+          border-bottom-left-radius: @brbl;
+}
+
+.rotate(@deg) {
+  -webkit-transform: rotate(@deg);
+     -moz-transform: rotate(@deg);
+      -ms-transform: rotate(@deg);
+       -o-transform: rotate(@deg);
+          transform: rotate(@deg);  
+}
+
+.translateY(@ty) {
+  -webkit-transform: translateY(@ty);
+      -ms-transform: translateY(@ty);
+       -o-transform: translateY(@ty);
+          transform: translateY(@ty);  
+}
+
+.transform-style(@ts) {
+  -webkit-transform-style: @ts;
+          transform-style: @ts; 
+}
+
+.transition(@tr) {
+  -webkit-transition: @tr @transition;
+  -o-transition: @tr @transition;
+  transition: @tr @transition;
+}
+
+.transition_2(@tr,@tr2) {
+  -webkit-transition: @tr @transition, @tr2 @transition;
+  -o-transition: @tr @transition, @tr2 @transition;
+  transition: @tr @transition, @tr2 @transition;
+}
+
+.set-icon-img(@RLeftPosition,@RTopPosition,@HLeftPosition,@HTopPosition) {
+  
+  &.img-icon {
+    &:before {
+      background-position: @RLeftPosition @RTopPosition;
+    }
+  }
+  
+  &:hover {
+    .img-icon {
+      &:before {
+        background-position: @HLeftPosition @HTopPosition;
+      }
+    }
+  }
+} //set-icon-img

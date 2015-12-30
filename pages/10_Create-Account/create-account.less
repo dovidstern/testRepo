@@ -1,0 +1,1065 @@
+@import '../00_global/mixins.less';
+
+#create-account {
+
+  .btn.btn-style > div span.btn-text {
+    padding-top: 1px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  .bottom-link-support {
+    margin-top: 25px;
+    text-align: center;
+
+    span {
+      color: #2b2b2b;
+    }
+
+    a {
+      color: #fff;
+    }
+  }
+
+  .input-field-container {
+    label {
+      color: #fff;
+    }
+
+    &.textarea {
+      > span {
+        color: #fff;
+      }
+
+      textarea {
+        height: 155px;
+      }
+    }
+  }
+
+  #welcome-modal {
+
+    .vertical-alignment-helper {
+      display: table;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+    }
+
+    .modal-dialog {
+      display: table-cell;
+      padding: 62px 15px;
+      vertical-align: middle;
+      pointer-events: none;
+
+      @media @extra, @desktop {
+        width: 784px;
+      }
+    }
+
+    .modal-content {
+      width: inherit;
+      height: inherit;
+      margin: 0 auto;
+      background-color: transparent;
+      border: none;
+      border-radius: 0;
+      box-shadow: none;
+      pointer-events: all;
+    }
+
+    .modal-header,
+    .modal-body,
+    .modal-footer {
+      background-color: #fff;
+    }
+
+    .modal-header,
+    .modal-footer {
+      border: none;
+    }
+
+    .modal-header {
+      .close-welcome-modal {
+        display: block;
+        width: 26px;
+        height: 26px;
+        background: url('../images/welcome-modal-close.png') center center no-repeat;
+        position: absolute;
+        top: 22px;
+        right: 22px;
+      }
+
+      .welcome-modal-img {
+        display: block;
+        width: 166px;
+        height: 166px;
+        margin: -62px auto 29px auto;
+        background: #fff url('../images/welcome-modal-img.png') center center no-repeat;
+        background-size: cover;
+        .border-radius(50%,50%,50%,50%);
+      }
+      .modal-title {
+        font-size: 48px;
+        font-weight: 300;
+        color: @mainTextColor;
+        text-align: center;
+      }
+    }
+
+    .modal-body {
+      margin-top: -1px;
+      margin-bottom: 10px;
+      padding-bottom: 68px;
+      font-size: 16px;
+      color: @mainTextColor;
+      line-height: 26px;
+      text-align: center;
+    }
+
+    .modal-footer {
+      padding: 45px 15px 20px 15px;
+      text-align: left;
+
+      > div > .display-table-cell:last-child {
+        text-align: right
+      }
+
+      .btn.btn-style > div span.btn-text {
+        text-transform: none;
+      }
+
+      .btn-style-link {
+
+        &:hover {
+          .btn-text {
+            color: @hightLightColor;
+          }
+        }
+
+        .btn-text {
+          color: @linkColorShape;
+          .transition(color);
+        }
+      }
+    }
+
+    .input-field-container {
+      margin-bottom: 12px;
+
+      &.textarea {
+        textarea {
+          height: 100px;
+        }
+      }
+    }
+  }
+
+  &.confirmation-sent {
+    .cpr-titles {
+      margin-bottom: 0;
+    }
+  }
+
+  &.initial-app-view {
+    .btn.btn-style > div span.btn-text {
+      text-transform: capitalize;
+    }
+  }
+
+  // Create account header wrapper
+    #create-account-header-wrapper {
+      height: 83px;
+      background-color: #fff;
+      border-bottom: 1px solid #f7f7f7;
+
+      #create-account-header {
+        height: 83px;
+
+        .create-account-header-row {
+          height: 83px;
+
+          #showdme-logo {
+            a {
+              width: 186px;
+              height: 83px;
+              display: block;
+              background: url('../images/showdme-logo.png') left center no-repeat;
+            }
+          }
+
+          .create-account-login-wrapper {
+            display: table;
+            height: 100%;
+            float: right;
+
+            .create-account-login-content {
+              display: table-cell;
+              vertical-align: middle;
+              text-align: right;
+
+              a {
+                height: 16px;
+                padding-left: 26px;
+                font-weight: 600;
+                font-size: 14px;
+                color: #2f2f2f;
+                background: url('../images/signup-login-icon.png') left center no-repeat;
+                white-space: nowrap;
+                .transition(color);
+
+                &:hover {
+                  color: #6cac45;
+                }
+
+                &.signup-link-signup {
+                  background: url('../images/signup-signup-icon.png') left center no-repeat;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  // End Create account header wrapper
+
+  // Create account footer container
+    .create-account-footer-container {
+      height: 147px;
+      background-color: #f7f7f7;
+
+      @media @tablet, @phone {
+        height: auto;
+      }
+
+      @media @phone {
+        //padding: 0 15px;
+        //height: auto;
+      }
+
+      // Div
+      .div {
+        height: 100%;
+
+        @media @tablet, @phone {
+          text-align: center;
+        }
+
+        // Create account footer links
+        .create-account-footer-links {
+          height: 100%;
+          padding-left: 58px;
+          background: url('../images/logo-icon.png') left 15px center no-repeat;
+
+          @media @desktop {
+            padding-right: 0;
+          }
+
+          @media @tablet {
+            display: inline-block;
+            height: 74px;
+          }
+
+          @media @phone {
+            display: block;
+            height: auto;
+            background: none;
+            padding-left: 15px;
+            margin: 20px 0;
+          }
+
+          li {
+            display: table;
+            float: left;
+            height: 100%;
+
+            @media @phone {
+              margin: 0 auto;
+              padding: 5px 0;
+              float: none;
+            }
+
+            .create-account-footer-links-wrapper {
+              display: table-cell;
+              vertical-align: middle;
+              height: 100%;
+
+              a {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 16px;
+                color: #2b2b2b;
+                margin-right: 22px;
+                .transition(color);
+
+                &:hover {
+                  color: #6cac45;
+                }
+
+                @media @desktop {
+                  margin-right: 12px;
+                }
+
+                @media @phone {
+                  margin: 0;
+                }
+              }
+            }
+          }
+        }
+        // End Create account footer links
+
+        // Create account footer social
+        .create-account-footer-social-col {
+          height: 100%;
+
+          @media @tablet, @phone {
+            height: auto;
+          }
+        }
+        .create-account-footer-social {
+          height: 100%;
+          float: right;
+
+          @media @tablet {
+            display: inline-block;
+            height: 74px;
+            float: none;
+          }
+
+          @media @phone {
+            float: none;
+            height: auto;
+            display: block;
+          }
+
+          li {
+            display: table;
+            height: 100%;
+            margin-right: 11px;
+            float: left;
+
+            &:last-child {
+              margin-right: 0;
+
+              @media @phone {
+                margin: 0 auto 10px auto;
+              }
+            }
+
+            @media @phone {
+              margin: 0 auto 10px auto;
+              float: none;
+            }
+
+            .create-account-footer-links-wrapper {
+              display: table-cell;
+              vertical-align: middle;
+              height: 100%;
+
+              a {
+                display: table;
+                height: 44px;
+                padding: 0 28px;
+                border: 1px solid #e3e7ea;
+                background-color: #fff;
+                color: #4f4f4f;
+                .border-radius(3px,3px,3px,3px);
+                .transition(border-color);
+
+                &:hover {
+                  border-color: #92d569;
+                }
+
+                &:hover {
+                  text-decoration: none;
+                }
+
+                span {
+                  display: table-cell;
+                  vertical-align: middle;
+                  position: relative;
+                  padding-left: 43px;
+
+                  &:before {
+                    content: '';
+                    display: block;
+                    width: 44px;
+                    height: 42px;
+                    border-right: 1px solid #e3e7ea;
+                    position: absolute;
+                    top: 0px;
+                    left: -28px;
+                  }
+                }
+              }
+
+              &.create-account-footer-fbs-btn {
+                span {
+                  &:before {
+                    background: url('../images/signup-social-icons.png') center top 14px no-repeat;
+                  }
+                }
+              }
+
+              &.create-account-footer-fbl-btn {
+                span {
+                  &:before {
+                    background: url('../images/signup-social-icons.png') center top 14px no-repeat;
+                  }
+                }            
+              }
+
+              &.create-account-footer-tws-btn {
+                span {
+                  &:before {
+                    background: url('../images/signup-social-icons.png') center bottom 14px no-repeat;
+                  }
+                }            
+              }
+            }
+          }
+        }
+        // End Create account footer social
+      }
+      // End Div
+    }
+  // End Create account footer container
+
+  //Content
+    .content-primary-row-wrapper {
+      background-color: #57b3de;
+    }
+
+    .content-primary-row {
+      padding-top: 100px;
+      padding-bottom: 100px;
+    }
+
+    .content-sec-row-wrapper {
+      background-color: #57b3de;
+    }
+
+    .cpr-titles {
+      margin-bottom: 77px;
+      text-align: center;
+
+      h2 {
+        margin-bottom: 12px;
+        font-weight: 300;
+        font-size: 48px;
+        color: #fff;
+      }
+
+      h3 {
+        font-size: 24px;
+        color: #fff;
+      }
+    }
+
+    .signup-form-wrapper {
+      max-width: 558px;
+      margin: 0 auto;
+      background-color: #f7f7f7;
+    }
+
+    .suf-title {
+      height: 97px;
+      padding: 0 115px;
+      background-color: #fff;
+      border-bottom: 1px solid #f1f1f1;
+      font-size: 24px;
+      color: #323232;
+      text-align: center;
+      
+      @media @phone {
+        padding: 0 10px;
+      }
+
+    }
+
+    .signup-form {
+      padding: 40px 70px;
+
+      @media @phone {
+        padding: 20px 20px;
+      }
+    }
+
+    .suf-wrong-mail {
+      width: 100%;
+      height: 29px;
+      background-color: #db6a6a;
+      font-size: 14px;
+      color: #fff;
+      text-align: center;
+      .border-radius(3px,3px,0px,0px);
+      
+      @media @phone {
+        height: 34px;
+      }
+
+    }
+
+    .suf-input-style {
+      width: 100%;
+      height: 44px;
+      margin-bottom: 10px;
+      background-color: #fff;
+      border: 1px solid #e5e5e5;
+      padding: 0 14px;
+      font-size: 18px;
+      color: #3d3d3d;
+      .border-radius(3px,3px,3px,3px);
+
+      &.error {
+        border: 1px solid #db6a6a;
+        .border-radius(0px,0px,3px,3px);
+      }
+    }
+
+    .bForm-wrapper {
+      margin-top: 10px;
+      overflow: hidden;
+
+      .bForm-inner {
+        display: table;
+        height: 44px;
+      }
+    }
+
+    // Signup org password wrapper
+    .suf-pwd-wrapper {
+      margin-top: 22px;
+      position: relative;
+
+      // Signup password strength meter
+      .suf-pwd-st-meter {
+        width: 100%;
+        height: 4px;
+        position: absolute;
+        left: 0;
+        top: 40px;
+        background-color: #b9b9b9;
+
+        &:before {
+          content: '';
+          display: block;
+          height: 4px;
+        }
+
+        &.suf-pwd-level-lowest {
+          &:before {
+            background-color: #ff0000;
+            width: 20%;
+          }
+        }
+
+        &.suf-pwd-level-low {
+          &:before {
+            background-color: #ffb636;
+            width: 40%;
+          }
+        }
+
+        &.suf-pwd-level-medium {
+          &:before {
+            background-color: #efe875;
+            width: 60%;
+          }
+        }
+
+        &.suf-pwd-level-high {
+          &:before {
+            background-color: #efe875;
+            width: 80%;
+          }
+        }
+
+        &.suf-pwd-level-highest {
+          &:before {
+            background-color: #4fe748;
+            width: 100%;
+          }
+        }
+      }
+      // End Signup password strength meter
+    
+
+      .suf-pwd-strength {
+        height: 38px;
+        padding-top: 11px;
+        padding-left: 4px;
+        background-color: #fff;
+        position: absolute;
+        top: 1px;
+        right: 12px;
+        z-index: 20;
+
+        span {
+          font-size: 14px;
+          color: #575757;
+        }
+      }
+
+      .suf-pwd-tips-wrapper {
+        width: 235px;
+        padding: 21px;
+        background-color: #fff;
+        border: 1px solid #e5e5e5;
+        font-size: 14px;
+        color: #575757;
+        position: absolute;
+        top: 0px;
+        right: -261px;
+        z-index: 20;
+
+        &:before {
+          display: block;
+          content: '';
+          width: 15px;
+          height: 27px;
+          background: url('../images/signup-pwd-tips-arrow.png') no-repeat center center;
+          position: absolute;
+          top: 12px;
+          left: -15px;
+        }
+
+        p {
+          margin-bottom: 20px;
+          font-weight: 600;
+          text-transform: uppercase;
+        }
+
+        .suf-pwd-item {
+          height: 23px;
+          margin-bottom: 6px;
+          padding-left: 33px;
+          background: url('../images/signup-pwd-tips-icons.png') no-repeat left top;
+
+          &.passed {
+            background: url('../images/signup-pwd-tips-icons.png') no-repeat left bottom;
+          }
+        }
+
+        @media @tablet {
+          top: -100%;
+          right: 0;
+          margin-top: -50px;
+
+          &:before {
+            width: 27px;
+            height: 15px;
+            top: 100%;
+            left: auto;
+            right: 50px;
+            background: url('../images/signup-pwd-tips-arrow-down.png') no-repeat center center !important;
+          }
+        }  
+
+        @media @phone {
+          top: -100%;
+          right: 30px;
+          margin-top: -50px;
+
+          &:before {
+            width: 27px;
+            height: 15px;
+            top: 100%;
+            left: auto;
+            right: 50px;
+            background: url('../images/signup-pwd-tips-arrow-down.png') no-repeat center center !important;
+          }
+        }        
+      }
+    }
+    // End Signup org password wrapper
+
+    .suf-policy-chkbox {
+      margin-top: 26px;
+      margin-bottom: 22px;
+
+      label {
+        font-size: 14px;
+
+        a {
+          color: #3b99c5;
+          text-decoration: underline;
+          .transition(color);
+
+          &:hover {
+            color: #6cac45;
+          }
+        }
+      }
+    }
+
+    .suf-btn {
+      width: 100%;
+      height: 44px;
+      margin-top: 36px;
+      background-color: #57b3de;
+      border: none;
+      font-size: 12px;
+      font-weight: 600;
+      color: #fff;
+      text-transform: uppercase;
+      .border-radius(3px,3px,3px,3px);
+      .transition(background-color);
+
+      &:hover {
+        background-color: #6cac45;
+      }
+
+      &.small-btn {
+        width: auto;
+        padding-left: 30px;
+        padding-right: 30px;
+        margin-top: 0px;
+      }
+    }
+
+    .features-item {
+      margin-bottom: 54px;
+      padding: 30px;
+      background-color: #4da7d1;
+    }
+
+    .features-item-img-holder {
+      text-align: center;
+      margin-bottom: 17px;
+
+      span {
+        display: inline-block;
+        width: 60px;
+        height: 60px;
+        background: url('../images/signup-conf-features.png') left top no-repeat;
+        vertical-align: top;
+      }
+    }
+
+    .features-item-title {
+      margin-bottom: 39px;
+      font-size: 22px;
+      color: #fff;
+      text-align: center;
+    }
+
+    .features-item-txt {
+      font-size: 16px;
+      line-height: 24px;
+      color: #fff;
+      text-align: center;
+    }
+
+    .signup-org-steps-wrapper {
+      margin: 0 98px;
+      text-align: center;
+      position: relative;
+
+      &:before {
+        content: '';
+        height: 1px;
+        background-color: #4297bf;
+        position: absolute;
+        top: 20px;
+        right: 160px;
+        left: 160px;
+      }
+      .signup-org-steps {
+        display: inline-block;
+
+        &:first-child {
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+
+        &:last-child {
+          position: absolute;
+          top: 0;
+          right: 0;
+        }
+
+        span {
+          font-size: 18px;
+          color: #fff;
+        }
+
+        &.active {
+
+          .signup-org-step-holder {
+            .holder-inner {
+              background-color: #fff;
+
+              span {
+                color: #4297bf; 
+              }
+            }
+          }
+          span {
+            font-weight: 600;
+          }
+        }
+      }
+
+      .signup-org-step-holder {
+        padding: 0 17px;
+        background-color: #66bae1;
+        position: relative;
+        z-index: 1;
+        display: inline-block;
+
+        .holder-inner {
+          height: 40px;
+          width: 40px;
+          background-color: #4297bf;
+          text-align: center;
+          float: left;
+        .border-radius(50%,50%,50%,50%);
+        }
+
+        .step-inner {
+          height: 40px;
+          margin-left: 12px;
+          display: table;
+          float: left;
+        }
+      }
+
+      @media @tablet {
+        margin: 0;
+      }
+
+      @media @phone {
+        margin: 25px auto;
+        max-width: 558px;
+
+        &:before {
+          height: 100%;
+          width: 1px;
+          top: 0;
+          left: 20px;
+          right: auto;
+        }
+
+        .signup-org-steps {
+          position: relative !important;
+          display: block;
+          text-align: left;
+
+          &:first-child {
+            .signup-org-step-holder {
+              margin-top: 0;
+            }
+          }
+
+          &:last-child {
+            .signup-org-step-holder {
+              margin-bottom: -5px;
+            }
+          }
+        }
+
+        .signup-org-step-holder {
+          margin: 15px 0;
+          padding: 0;
+        }
+      }
+    }
+
+    // Signup form organization url wrapper
+    .suf-org-url-wrapper {
+      position: relative;
+
+      .suf-org-url {
+        margin-left: 8px;
+        float: right;
+        position: relative;
+        > div {
+          height: 44px;
+
+          span {
+            font-size: 18px;
+            color: #626262;
+          }  
+        }
+      }
+
+      .suf-tooltip-good,
+      .suf-tooltip-bad {
+        padding: 3px 11px;
+        font-size: 12px;
+        position: absolute;
+        top: -16px;
+        .border-radius(3px,3px,3px,3px);
+    
+        &:after {
+          display: block;
+          content: '';
+          width: 5px;
+          height: 3px;
+          position: absolute;
+          bottom: -3px;
+        }
+      }
+    
+      .suf-tooltip-good {
+        background-color: #8ad537;
+        color: #3e6a0e;
+        left: -63px;
+    
+        &:after {
+          background: url('../images/signup-tooltip-arrow.png') no-repeat center top;
+          left: 33px;
+        }
+      }
+    
+      .suf-tooltip-bad {
+        background-color: #db6a6a;
+        color: #fff;
+        left: -103px;
+    
+        &:after {
+          background: url('../images/signup-tooltip-arrow.png') no-repeat center bottom;
+          left: 73px;
+        }
+      }
+    
+      .suf-org-url-input {
+        margin-bottom: 43px;
+        overflow: hidden;
+    
+        &.available input {
+          padding-right: 30px;
+          background: #fff url('../images/signup-subdomain-icon.png') no-repeat right 10px top 13px;
+        }
+    
+        &.taken input {
+          padding-right: 30px;
+          background: #fff url('../images/signup-subdomain-icon.png') no-repeat right 10px top -24px;
+        }
+      }
+    }
+    // End Signup form organization url wrapper
+
+    .suf-skip-invites {
+      margin-top: 31px;
+      text-align: center;
+      a {
+        font-size: 16px;
+        color: #449bc4;
+        .transition(color);
+
+        &:hover {
+          color: #6cac45
+        }
+      }
+
+      &.ssi-border-top {
+        margin-top: 37px;
+        padding-top: 20px;
+        border-top: 1px solid #e1e1e1;
+      }
+    }
+
+    .add-invite-email {
+      //width: 100%;
+      //height: 44px;
+      margin-bottom: 45px;
+      background: none;
+      border: 1px dashed #dadada;
+      //font-size: 12px;
+      //font-weight: 600;
+      color: #57b3de;
+      //text-transform: uppercase;
+      //.border-radius(3px,3px,3px,3px);
+      .transition(border-color);
+
+      &:hover {
+        border-color: @hightLightColor;
+      }
+    }
+  //End Content
+
+  //Local styles
+    &.signup-org {
+      .content-primary-row {
+        padding-top: 80px;
+      }
+      .content-sec-row-wrapper {
+        height: 159px;
+        padding: 0;
+        background-color: #66bae1;
+      }
+
+      .cpr-titles {
+        margin-bottom: 66px;
+      }
+
+      .suf-title {
+        padding: 0 35px;
+      }
+
+      &.step-3 {
+        .suf-title {
+          padding: 0 15px;
+        }
+      }
+    }
+
+    &.login,
+    &.login-error {
+      .suf-skip-invites {
+        a {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    &.login-error {
+      .suf-wrong-mail {
+        height: 43px;
+        padding-left: 70px;
+        padding-right: 70px;
+        border-radius: 0px;
+        text-align: left;
+      }
+
+      .suf-skip-invites {
+        a {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    &.password-reset {
+      .cpr-titles {
+        margin-bottom: 28px;
+
+        h2 {
+          margin-bottom: 110px;
+        }
+      }
+      .suf-btn {
+        margin-top: 5px;
+      }
+    }
+
+    &.confirmation-email-sent {
+      .cpr-titles {
+
+        h2 {
+          margin-bottom: 80px;
+        }
+      }  
+    }
+
+    &.new-user {
+      .suf-btn {
+        margin-top: 0px;
+      }
+    }
+  // End Local styles
+}

@@ -1,0 +1,179 @@
+ <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=0.75, user-scalable=no">
+    <title>DES-584</title>  
+    <link rel="stylesheet" type="text/css" href="../../bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/perfect-scrollbar.min.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/tooltip-classic.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/application.css">
+
+    <script type="text/javascript" src="../../assets/js/head.load.min.js"></script>
+    <script type="text/javascript" src="../../assets/js/jquery-2.1.1.min.js"></script>
+  </head>
+  <body id="shareme" class="add-content-2">
+
+    <div id="main-wrapper" class="display-table">
+
+      <!-- Nav Bar Wrapper -->
+      <header id="main-header-wrapper" class="display-table-row template ie-header" data-template="../00_templates/03_ShareMe/mainHeader-browse-all-content.html">
+      </header>
+      <!-- End Navbar Wrapper -->
+      <div class="display-table-row">
+        <div id="main-content-wrapper" class="display-table-cell ie-height-fix">
+          <div class="display-table">
+            <div class="display-table-row">
+
+              <!-- Main Content Wrapper -->
+              <div id="right-content-wrapper" class="display-table-cell">
+                <div class="display-table">
+                  <!-- Secondary header wrapper -->
+                  <header class="ie-header display-table-row">
+                    <div id="secondary-header-wrapper" class="display-table-cell">
+
+                      <ul class="btn-list-holder pull-left">                   
+                        <li>
+                          <a class="btn btn-style btn-style-default disabled" role="button">
+                            <div>
+                              <span class="btn-icon">
+                                <i class="flaticon eye-1"></i>
+                              </span>
+                              <span class="btn-text">Preview</span>
+                            </div>
+                          </a>
+                        </li>
+                      </ul>
+
+                      <ul class="btn-list-holder pull-right">                   
+                        <li>
+                          <a class="btn btn-style btn-style-default btn-color-red" role="button">
+                            <div>
+                              <span class="btn-icon">
+                                <i class="flaticon x-2"></i>
+                              </span>
+                              <span class="btn-text">Cancel</span>
+                            </div>
+                          </a>
+                        </li>                  
+                        <li>
+                          <a class="btn btn-style btn-style-primary disabled" role="button">
+                            <div>
+                              <span class="btn-text">Save</span>
+                            </div>
+                          </a>
+                        </li>
+                      </ul>
+
+                    </div>
+                  </header>
+                  <!-- End secondary header wrapper -->
+
+                  <div class="display-table-row">
+                    <section id="main-content" class="display-table-cell vertical-top ie-height-fix">
+                      <div class="ps-custom-wrapper">
+                        <div class="ps-custom-holder">
+                          <div class="ps-custom-scrollbar">
+                            <div class="main-content-inner">
+
+                              <!-- Card Holder -->
+                              <div class="card-holder title-card-step">
+
+                                <div class="tcs-header card-row clearfix">
+                                  <h1 class="tsc-title">Add Content to</h1>
+                                </div>
+
+                                <div class="card-row clearfix">
+                                  <div class="input-field-container">
+                                    <div class="autocomplete-wrapper input-with-button">
+                                      <input type="text" name="search" class="no-focus autocomplete-input" placeholder="Choose what Session you would like to add Content to" value="User Experience Principles">
+                                      <!-- Remove the ID of the button -->
+                                      <button id="testBtn" class="btn btn-style btn-style-default btn-line-none btn-border-none" onclick="showHideDropdown()">
+                                        <div>
+                                          <span class="btn-icon">
+                                            <i class="flaticon down-2"></i>
+                                          </span>
+                                        </div>
+                                      </button>
+                                      <div class="autocomplete">
+                                        <ul class="iwb-search">
+                                          <li>
+                                            <ul>
+                                              <li>
+                                                <a href="#">Sample <span class="text-highlight">Ses</span>sion for Web Development<span class="last-accessed">Last accessed: 2 days ago</span></a>
+                                              </li>
+                                              <li>
+                                                <a href="#">Sample <span class="text-highlight">Ses</span>sion name autocomplete goes here<span class="last-accessed">Last accessed: 6 days ago</span></a>
+                                              </li>
+                                              <li>
+                                                <a href="#">Sample <span class="text-highlight">Ses</span>sion without any purpose<span class="last-accessed">Last accessed: 12 days ago</span></a>
+                                              </li>
+                                            </ul>
+                                          </li>
+                                        </ul>
+                                      </div>
+                                    </div> 
+                                  </div>
+                                </div>
+                                <div class="card-row clearfix">
+                                  <!-- Drop box -->
+                                  <div class="display-table drop-box">
+                                    <div class="display-table-cell">
+                                      <div>
+                                        <div class="drop-icon">
+                                          <img src="../../assets/images/folder-icon.png">
+                                        </div>
+                                        <div class="upload-a-file-inner">
+                                          <h2>Drag a file here or <a>browse</a> for a file</h2>
+                                          </div>
+                                        </div>
+                                        <div class="upload-a-file-over">
+                                          <h2>Drag your file here to add it to ShareMe</h2>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  <!-- End drop box -->
+                                  <div class="supported-file-types">
+                                    Supported file types : .pdf ; .doc ; .ppt ; .mp3 ; .avi ; .mp4 ; .psd ; pdf ; .doc ; .ppt ; .mp3 ; .avi ; .mp4 ; .psd 
+                                  </div>
+                                </div>
+                                <div class="card-row clearfix">
+                                  <div class="input-field-container">
+                                    <label>Content caption <span>(optional)</span></label>
+                                    <input type="text" placeholder="Write here ...">
+                                  </div>
+                                </div>
+                              </div> <!-- /.card-holder -->
+                                    
+                            </div> <!-- /.main-content-inner -->
+                          </div> <!-- /.ps-custom-scrollbar -->
+                        </div> <!-- /.ps-custom-holder -->
+                      </div> <!-- /.ps-custom-wrapper -->
+                    </section> <!-- /#main-content -->
+                  </div> <!-- /.display-table-row -->
+                </div> 
+              </div>
+              <!-- End Main Content Wrapper -->
+              
+              <div id="sidebars-wrapper" class="display-table-cell">
+                <div class="display-table">
+                  <!-- Sidebar menu -->
+                  <aside id="left-menu-wrapper" class="display-table-cell">
+                    <div class="template ps-custom-scrollbar" data-template="../00_templates/03_ShareMe/sidebar-left-add-content.html">
+                    </div>
+                  </aside>
+                  <!-- End Sidebar menu -->
+                </div>
+              </div>
+              <!-- sidebars-wrapper -->
+            </div>
+          </div>
+        </div>
+      </div>  
+    </div>  
+    
+    <script type="text/javascript" src="../../assets/js/loadScripts.js"></script>
+  </body>
+</html>

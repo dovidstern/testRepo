@@ -1,0 +1,204 @@
+@showdme-blue: #00B8E5;
+@showdme-fill: #F6F7FB;
+@showdme-gray: #968E9D;
+
+body{
+	color: @showdme-gray;
+}
+
+#top {
+	width:100%;
+	height: 75px;
+	
+	div, input {
+		display:inline-block;
+		box-sizing:border-box;
+	}
+	
+	.imgWrapper {
+		width:100px;
+		height:75px;
+		padding:15px;
+		vertical-align: middle;
+		
+		.image {
+			width:50px;
+			height:50px;
+			border-radius:25px;
+			padding: 10px;
+			font-size:20px;
+			background-color: @showdme-blue;
+			color:white;
+		}
+	}
+	.inputWrapper {
+		margin-left:15px;
+		height:30px;
+		border:solid gray 1px;
+		width:900px;
+		padding:0;
+		border-radius:3px;
+		
+		.searchButtton, .searchInput {
+			font-size:20px;
+			background-color: @showdme-fill;
+			height:28px;
+			padding:2px;
+			color:@showdme-gray;
+		}
+		.searchButtton {
+			border-right:solid @showdme-gray 1px;
+			margin-right:-4px;
+			width:172px;
+			padding-left:20px;
+			padding-bottom:5px;
+		}
+		.searchInput {
+			width:725px;
+			border:0;
+			padding-left:20px;
+		}
+	}
+	.dropDown {
+		background-color:@showdme-blue;
+		padding:25px;
+		width:250px;
+		height:100%;
+		color:white;
+		margin-left:92px;
+		text-align:center;
+	}
+}
+#main, #sideBar, .pathSteps, .sideBarOptions, .topOption{
+	box-sizing:border-box;
+	display:inline-block;
+}
+#main {
+	width:866px;
+	height:100%;
+	background-color: @showdme-fill;
+	border: solid  @showdme-gray 1px;
+	padding: 0 15px;
+	vertical-align:top;
+	
+	.stationWrapper {
+		width:100%;
+		padding-top:20px;
+		
+		.currentStation {
+			text-decoration: underline;
+		}
+	}
+	
+	.pathOptions {
+		margin-top:15px;
+		width:100%;
+		height:45px;
+		background-color:white;
+		padding:6px;
+		border-radius:3px;
+		border: solid @showdme-gray 1px;
+		box-sizing:border-box;
+		
+		button {
+			background-color:white;
+			border-left:solid @showdme-blue 3px;
+			height:25px;;
+			width:65px;
+			border-radius:4px;
+			margin:4px;
+		}
+		
+		.buttonOption {
+			float:right;
+		}
+	}
+	.context {
+		margin-top:5px;
+		background-color:white;
+		border-radius:3px;
+		border: solid @showdme-gray 1px;
+		width:100%;
+		box-sizing:border-box;
+		padding:20px;
+		
+		p {
+			margin:35px 0;
+		}
+		
+		.skills {
+			margin-top:30px;
+			
+			hr {
+				color:@showdme-gray;
+			}
+			.tags {
+				background-color: @showdme-fill;
+				display: inline-block;
+				text-align:center;
+				border-radius:2px; 
+				border:solid @showdme-gray 1px;
+				margin:3px;
+				padding:4px;
+			}
+		}
+	}
+}
+#sideBar {
+	width:499px;
+	height:100%;
+	margin-left: -4px;
+	background-color:#CED2D4;
+	
+	.pathSteps {
+		width:245px;
+		
+		.step {
+			width:220px;
+			padding:15px 0;
+			border:solid @showdme-gray 1px;
+			margin:3px 13px;
+			background-color:@showdme-fill;
+			text-align:center;
+			
+			span{
+				font-size:20px;
+			}
+		}
+	}
+	.sideBarOptions{
+		width: 249px;
+		height:90%;
+		background-color: white;
+		vertical-align: top;
+		color: @showdme-blue;
+		font-weight:600;
+		
+		.topOption {
+			width: 110px;
+			height: 65px;
+			border: solid  @showdme-blue 4px;
+			border-radius: 5px;
+			margin: 5px;
+			text-align: center;
+			padding-top: 20px;
+			font-size: 18px;
+		}
+		.option {
+			width: 200px;
+			height:75px;
+			margin: 10px 20px;
+			border-bottom: solid @showdme-gray 1px;
+			font-size:18px;
+			font-weight:600;
+			
+			span {
+				position:relative;
+				top:25px;
+			}
+			.gray{
+				color: showdme-gray;
+			}
+		}
+	}
+}

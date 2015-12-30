@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=0.75, user-scalable=no">
+    <title>DES-515</title>  
+    <link rel="stylesheet" type="text/css" href="../../bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/perfect-scrollbar.min.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/tooltip-classic.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/application.css">
+
+    <script type="text/javascript" src="../../assets/js/head.load.min.js"></script>
+    <script type="text/javascript" src="../../assets/js/jquery-2.1.1.min.js"></script>
+  </head>
+  <body id="messages" class="inbox">
+
+    <div id="main-wrapper" class="display-table">
+
+      <!-- Nav Bar Wrapper -->
+      <header id="main-header-wrapper" class="display-table-row template ie-header" data-template="../00_templates/05_messages/mainHeader-messages.html">
+      </header>
+      <!-- End Navbar Wrapper -->
+
+      <div class="display-table-row">
+        <div id="main-content-wrapper" class="display-table-cell ie-height-fix">
+          <div class="display-table">
+            <div class="display-table-row">
+
+              <!-- Main Content Wrapper -->
+              <div id="right-content-wrapper" class="display-table-cell">
+                <div class="display-table">
+
+                  <!-- Secondary header wrapper -->
+                  <header class="display-table-row ie-header">
+                    <div id="secondary-header-wrapper" class="display-table-cell">
+
+                      <ul class="btn-list-holder pull-left">
+                        <li class="dropdown-wrapper checkbox-in-wrapper">
+                          <div class="display-table">
+                            <a href="#" class="dropdown-btn-wrapper display-table-cell">
+                              <fieldset class="checkbox-wrapper">
+                                <input type="checkbox" name="inbox-msg-0" id="mark-group-msg" class="checkbox-inside-btn">
+                                <label for="mark-group-msg" class="no-txt"></label>
+                              </fieldset>
+                              <span class="dropdown-btn-arrow"></span>
+                            </a>
+                          </div>
+                          <ul class="dropdown-list-wrapper">
+                            <li class="dropdown-item-wrapper">
+                              <a onclick="messageActions('all', 'enabled')">All</a>
+                            </li>
+                            <li class="dropdown-item-wrapper">
+                              <a onclick="messageActions('none', 'enabled')">None</a>
+                            </li>
+                            <li class="dropdown-item-wrapper">
+                              <a onclick="messageActions('read', 'enabled')">Read</a>
+                            </li>
+                            <li class="dropdown-item-wrapper">
+                              <a onclick="messageActions('unread', 'enabled')">Unread</a>
+                            </li>
+                            <li class="dropdown-item-wrapper">
+                              <a onclick="messageActions('starred', 'enabled')">Starred</a>
+                            </li>
+                            <li class="dropdown-item-wrapper">
+                              <a onclick="messageActions('unstarred', 'enabled')">Unstarred</a>
+                            </li>
+                          </ul>
+                        </li>                      
+                        <li>
+                          <a class="btn btn-style btn-style-default disabled" role="button" data-action="read">
+                            <div>
+                              <span class="btn-icon">
+                                <i class="flaticon eye-1"></i>
+                              </span>
+                              <span class="btn-text">Mark As Read</span>
+                            </div> 
+                          </a>
+                        </li>
+                        <li class="eye-1-crossed">
+                          <a class="btn btn-style btn-style-default disabled" role="button" data-action="read">
+                            <div>
+                              <span class="btn-icon">
+                                <i class="img-icon"></i>
+                              </span>
+                              <span class="btn-text">Mark As Unread</span>
+                            </div> 
+                          </a>
+                        </li>
+                        <li>
+                          <a class="btn btn-style btn-style-default btn-color-red disabled" role="button" data-action="delete">
+                            <div>
+                              <span class="btn-icon">
+                                <i class="flaticon eye-1"></i>
+                              </span>
+                              <span class="btn-text">Delete</span>
+                            </div> 
+                          </a>
+                        </li>
+                      </ul>
+
+                    </div>
+                  </header>
+                  <!-- End secondary header wrapper -->
+
+                  <div class="display-table-row">
+                    <section id="main-content" class="display-table-cell ie-height-fix">
+                      <div class="ps-custom-wrapper">
+                        <div class="ps-custom-holder">
+                          <div class="ps-custom-scrollbar">
+                            <div class="main-content-inner">
+                              <div class="messages-container">
+                                <ul>
+                                  <li class="inbox-message-item new">
+                                    <div class="layer layer-1"><div></div></div>
+                                    <div class="layer layer-2"><div></div></div>
+                                    <div class="single-message">
+                                      <header class="clearfix message-title">
+                                        <div class="display-table-cell full-width">
+                                          <fieldset class="imi-ckeckbox checkbox-wrapper">
+                                            <input type="checkbox" name="inbox-msg-1" id="inbox-msg-1" class="msg-list-checkbox">
+                                            <label for="inbox-msg-1">Interface design</label>
+                                          </fieldset>
+                                        </div>
+                                        <div class="display-table-cell">
+                                          <a href="#" class="favorite-icon"></a>
+                                        </div>
+                                      </header>
+                                      <article>
+                                        <div class="display-table">
+                                          <div class="display-table-cell vertical-top">
+                                            <div class="avatar-wrapper">
+                                              <a href="#" class="display-table">
+                                                <div class="display-table-cell">
+                                                  <div class="avatar-img-wrapper">
+                                                    <span class="avatar-img"></span>
+                                                  </div>
+                                                </div>
+                                                <div class="display-table-cell full-width">
+                                                  <span class="avatar-name">Stoyan Daskaloff</span>
+                                                  <span class="avatar-txt">10.14.2014 @ 2:30pm</span>
+                                                </div>
+                                              </a>
+                                            </div>
+                                          </div>
+                                          <div class="display-table-cell full-width">                               
+                                            <div class="full-height single-message-container">
+                                                <div class="display-table">
+                                                  <div class="display-table-cell">
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque risus turpis, ornare id vestibulum in, rhoncus eu justo. Duis luctus nunc elementum viverra tristique. Sed mattis, diam vel ullamcorper elementum, lectus urna hendrerit lacus, nec mattis tellus mi a nisl. Nulla ultrices urna id tincidunt volutpat. Vestibulum quis tortor aliquet, semper odio ac, posuere dolor. Integer euismod diam id ipsum eleifend, at ultricies dolor interdum. In varius nulla quis dui aliquam ullamcorper. Nunc quis metus sed libero suscipit imperdiet quis volutpat ligula.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque risus turpis, ornare id vestibulum in, rhoncus eu justo. Duis luctus nunc elementum viverra tristique. Sed mattis, diam vel ullamcorper elementum, lectus urna hendrerit lacus, nec mattis tellus mi a nisl. Nulla ultrices urna id tincidunt volutpat. Vestibulum quis tortor aliquet, semper odio ac, posuere dolor. Integer euismod diam id ipsum eleifend, at ultricies dolor interdum. In varius nulla quis dui aliquam ullamcorper. Nunc quis metus sed libero suscipit imperdiet quis volutpat ligula.</p>
+                                                  </div>
+                                                </div>      
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </article>
+                                    </div>
+                                  </li>
+                                  <li class="inbox-message-item new">
+                                    <div class="layer layer-1"><div></div></div>
+                                    <div class="layer layer-2"><div></div></div>
+                                    <div class="single-message">
+                                      <header class="clearfix message-title">
+                                        <div class="display-table-cell full-width">
+                                          <fieldset class="imi-ckeckbox checkbox-wrapper">
+                                            <input type="checkbox" name="inbox-msg-2" id="inbox-msg-2" class="msg-list-checkbox">
+                                            <label for="inbox-msg-2">Hello there !</label>
+                                          </fieldset>
+                                        </div>
+                                        <div class="display-table-cell">
+                                          <a href="#" class="favorite-icon"></a>
+                                        </div>
+                                      </header>
+                                      <article>
+                                        <div class="display-table">
+                                          <div class="display-table-cell vertical-top">
+                                            <div class="avatar-wrapper">
+                                              <a href="#" class="display-table">
+                                                <div class="display-table-cell">
+                                                  <div class="avatar-img-wrapper">
+                                                    <span class="avatar-img"></span>
+                                                  </div>
+                                                </div>
+                                                <div class="display-table-cell full-width">
+                                                  <span class="avatar-name">George Bakalov</span>
+                                                  <span class="avatar-txt">10.14.2014 @ 2:30pm</span>
+                                                </div>
+                                              </a>
+                                            </div>
+                                          </div>
+                                          <div class="display-table-cell full-width">                               
+                                            <div class="full-height single-message-container">
+                                                <div class="display-table">
+                                                  <div class="display-table-cell">
+                                                    <p>Hey man, did you get my last message ?</p>
+                                                  </div>
+                                                </div>      
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </article>
+                                    </div>
+                                  </li>
+                                  <li class="inbox-message-item discussion">
+                                    <div class="layer layer-1"><div></div></div>
+                                    <div class="layer layer-2"><div></div></div>
+                                    <div class="single-message">
+                                      <header class="clearfix message-title">
+                                        <div class="display-table-cell full-width">
+                                          <fieldset class="imi-ckeckbox checkbox-wrapper">
+                                            <input type="checkbox" name="inbox-msg-3" id="inbox-msg-3" class="msg-list-checkbox">
+                                            <label for="inbox-msg-3">RE: NEW UI Summary</label>
+                                          </fieldset>
+                                        </div>
+                                        <div class="display-table-cell">
+                                          <a href="#" class="favorite-icon"></a>
+                                        </div>
+                                      </header>
+                                      <article>
+                                        <div class="display-table">
+                                          <div class="display-table-cell vertical-top">
+                                            <div class="avatar-wrapper">
+                                              <a href="#" class="display-table">
+                                                <div class="display-table-cell">
+                                                  <div class="avatar-img-wrapper">
+                                                    <span class="avatar-img"></span>
+                                                  </div>
+                                                </div>
+                                                <div class="display-table-cell full-width">
+                                                  <span class="avatar-name">Jessy Carlstein</span>
+                                                  <span class="avatar-txt">10.14.2014 @ 2:30pm</span>
+                                                </div>
+                                              </a>
+                                            </div>
+                                          </div>
+                                          <div class="display-table-cell full-width">                               
+                                            <div class="full-height single-message-container">
+                                                <div class="display-table">
+                                                  <div class="display-table-cell">
+                                                    <p>Nulla ultrices urna id tincidunt volutpat. Vestibulum quis tortor aliquet, semper odio ac, posuere dolor. Integer euismod diam id ipsum eleifend, at ultricies dolor interdum. In varius nulla quis dui aliquam ullamcorper. Nunc quis metus sed libero suscipit imperdiet quis volutpat ligula.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque risus turpis, ornare id vestibulum in, rhoncus eu justo. Duis luctus nunc elementum viverra tristique. Sed mattis, diam vel ullamcorper elementum, lectus urna hendrerit lacus, nec mattis tellus mi a nisl.</p>
+                                                  </div>
+                                                </div>      
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </article>
+                                    </div>
+                                  </li>
+                                  <li class="inbox-message-item">
+                                    <div class="layer layer-1"><div></div></div>
+                                    <div class="layer layer-2"><div></div></div>
+                                    <div class="single-message">
+                                      <header class="clearfix message-title display-table">
+                                        <div class="display-table-cell full-width">
+                                          <fieldset class="imi-ckeckbox checkbox-wrapper">
+                                            <input type="checkbox" name="inbox-msg-4" id="inbox-msg-4" class="msg-list-checkbox">
+                                            <label for="inbox-msg-4">Meeting, tomorrow at 6pm</label>
+                                          </fieldset>
+                                        </div>
+                                        <div class="display-table-cell">
+                                          <ul class="sent-to-people display-table">
+                                            <li class="display-table-cell">
+                                              Sent to:
+                                            </li>
+                                            <li class="display-table-cell">
+                                              <a class="sample-image-1">
+                                                <span></span>
+                                              </a>
+                                            </li>
+                                            <li class="display-table-cell">
+                                              <a class="sample-image-2">
+                                                <span></span>
+                                              </a>
+                                            </li>
+                                            <li class="display-table-cell">
+                                              <a class="sample-image-3">
+                                                <span></span>
+                                              </a>
+                                            </li>
+                                            <li class="display-table-cell">
+                                              <a class="sample-image-4">
+                                                <span></span>
+                                              </a>
+                                            </li>
+                                          </ul>
+                                        </div>
+                                        <div class="display-table-cell">
+                                          <a href="#" class="favorite-icon on"></a>
+                                        </div>
+                                      </header>
+                                      <article>
+                                        <div class="display-table">
+                                          <div class="display-table-cell vertical-top">
+                                            <div class="avatar-wrapper">
+                                              <a href="#" class="display-table">
+                                                <div class="display-table-cell">
+                                                  <div class="avatar-img-wrapper">
+                                                    <span class="avatar-img"></span>
+                                                  </div>
+                                                </div>
+                                                <div class="display-table-cell full-width">
+                                                  <span class="avatar-name">George Bakalov</span>
+                                                  <span class="avatar-txt">10.14.2014 @ 2:30pm</span>
+                                                </div>
+                                              </a>
+                                            </div>
+                                          </div>
+                                          <div class="display-table-cell full-width">                               
+                                            <div class="full-height single-message-container">
+                                                <div class="display-table">
+                                                  <div class="display-table-cell">
+                                                    <p>Hello everyone. We need to have a meeting tomorrow (Sunday) at 6pm GMT +2 . We have some important things to discuss</p>
+                                                  </div>
+                                                </div>      
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </article>
+                                    </div>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div> <!-- /.main-content-inner -->
+                          </div> <!-- /.ps-custom-scrollbar -->
+                        </div> <!-- /.ps-custom-holder -->
+                      </div> <!-- /.ps-custom-wrapper -->
+                    </section> <!-- /#main-content -->
+                  </div> <!-- /.display-table-row -->
+                </div> <!-- /.display-table -->
+              </div> <!-- /.display-table-cell -->
+              <!-- End Main Content Wrapper -->
+
+              <!-- Sidebar menu -->
+              <aside id="left-menu-wrapper" class="display-table-cell">
+                <div class="template ps-custom-scrollbar" data-template="../00_templates/05_messages/sidebar-left-inbox.html">
+                </div>
+              </aside>
+              <!-- End Sidebar menu -->
+
+            </div>
+          </div>
+        </div>
+      </div>  
+    </div>  
+    
+    <script type="text/javascript" src="../../assets/js/loadScripts.js"></script>
+  </body>
+</html>

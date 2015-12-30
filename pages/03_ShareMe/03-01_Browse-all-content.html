@@ -1,0 +1,885 @@
+ <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=0.75, user-scalable=no">
+    <title>DES-469</title>  
+    <link rel="stylesheet" type="text/css" href="../../bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/perfect-scrollbar.min.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/tooltip-classic.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/application.css">
+
+    <script type="text/javascript" src="../../assets/js/head.load.min.js"></script>
+    <script type="text/javascript" src="../../assets/js/jquery-2.1.1.min.js"></script>
+  </head>
+  <body id="shareme" class="browse-all-content">
+
+    <div id="main-wrapper" class="display-table">
+
+      <!-- Nav Bar Wrapper -->
+      <header id="main-header-wrapper" class="display-table-row template ie-header" data-template="../00_templates/03_ShareMe/mainHeader-browse-all-content.html">
+      </header>
+      <!-- End Navbar Wrapper -->
+      <div class="display-table-row">
+        <div id="main-content-wrapper" class="display-table-cell ie-height-fix">
+          <div class="display-table">
+            <div class="display-table-row">
+
+              <!-- Main Content Wrapper -->
+              <div id="right-content-wrapper" class="display-table-cell">
+                <div class="display-table">
+                  <!-- Secondary header wrapper -->
+                  <header class="ie-header display-table-row">
+                    <div id="secondary-header-wrapper" class="display-table-cell">
+
+                      <ul class="btn-list-holder pull-left">
+
+                        <li class="dropdown-wrapper radio">
+                          <div class="display-table">
+                            <a href="#" class="dropdown-btn-wrapper display-table-cell">
+                              <span class="dropdown-btn-txt">Show : <b>All</b></span>
+                              <span class="dropdown-btn-separator"></span>
+                              <span class="dropdown-btn-arrow"></span>
+                            </a>
+                          </div>  
+                          <ul class="dropdown-list-wrapper">
+                            <li class="dropdown-item-wrapper selected display-table">
+                              <fieldset class="radio-wrapper">
+                                <input type="radio" name="dropdown-radio-session" class="dropdown-radio" id="session-type-1" checked="checked">
+                                <label for="session-type-1">
+                                  <span>Session type 1</span>
+                                </label>
+                              </fieldset>
+                            </li>
+                            <li class="dropdown-item-wrapper display-table">
+                              <fieldset class="radio-wrapper">
+                                <input type="radio" name="dropdown-radio-session" class="dropdown-radio" id="session-type-2">
+                                <label for="session-type-2">
+                                  <span>Session type 2</span>
+                                </label>
+                              </fieldset>
+                            </li>
+                            <li class="dropdown-item-wrapper display-table">
+                              <fieldset class="radio-wrapper">
+                                <input type="radio" name="dropdown-radio-session" class="dropdown-radio" id="session-type-3">
+                                <label for="session-type-3">
+                                  <span>Session type 3</span>
+                                </label>
+                              </fieldset>
+                            </li>
+                            <li class="dropdown-item-wrapper display-table">
+                              <fieldset class="radio-wrapper">
+                                <input type="radio" name="dropdown-radio-session" class="dropdown-radio" id="session-type-4">
+                                <label for="session-type-4">
+                                  <span>Session type 4</span>
+                                </label>
+                              </fieldset>
+                            </li>
+                          </ul>
+                        </li>
+
+                        <li class="dropdown-wrapper radio">
+                          <div class="display-table">
+                            <a href="#" class="dropdown-btn-wrapper display-table-cell">
+                              <span class="dropdown-btn-txt">Display : <b>All</b></span>
+                              <span class="dropdown-btn-separator"></span>
+                              <span class="dropdown-btn-arrow"></span>
+                            </a>
+                          </div>  
+                          <ul class="dropdown-list-wrapper">
+                            <li class="dropdown-item-wrapper selected display-table">
+                              <fieldset class="radio-wrapper">
+                                <input type="radio" name="dropdown-radio-course" class="dropdown-radio" id="course-length-1" checked="checked">
+                                <label for="course-length-1">
+                                  <span>Course length 1</span>
+                                </label>
+                              </fieldset>
+                            </li>
+                            <li class="dropdown-item-wrapper display-table">
+                              <fieldset class="radio-wrapper">
+                                <input type="radio" name="dropdown-radio-course" class="dropdown-radio" id="course-length-2">
+                                <label for="course-length-2">
+                                  <span>Course length 2</span>
+                                </label>
+                              </fieldset>
+                            </li>
+                            <li class="dropdown-item-wrapper display-table">
+                              <fieldset class="radio-wrapper">
+                                <input type="radio" name="dropdown-radio-course" class="dropdown-radio" id="course-length-3">
+                                <label for="course-length-3">
+                                  <span>Course length 3</span>
+                                </label>
+                              </fieldset>
+                            </li>
+                            <li class="dropdown-item-wrapper display-table">
+                              <fieldset class="radio-wrapper">
+                                <input type="radio" name="dropdown-radio-course" class="dropdown-radio" id="course-length-4">
+                                <label for="course-length-4">
+                                  <span>Course length 4</span>
+                                </label>
+                              </fieldset>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+
+                    </div>
+                  </header>
+                  <!-- End secondary header wrapper -->
+
+                  <div class="display-table-row">
+                    <section id="main-content" class="display-table-cell vertical-top ie-height-fix">
+                      <div class="ps-custom-wrapper">
+                        <div class="ps-custom-holder">
+                          <div class="ps-custom-scrollbar">
+                            <div class="main-content-inner">
+
+                              <div class="row">
+                                <ul class="col-lg-6">
+                                  <li>
+                                    <div class="card-holder shareme">
+                                      <!-- Card quick menu -->
+                                      <div class="quick-menu-wrapper">
+                                        <a class="quick-menu-btn nav-btn-x">
+                                          <span class="navicon"></span>
+                                        </a>
+                                        <div class="quick-menu-holder">
+                                          <ul class="quick-menu">
+                                            <li>
+                                              <a class="btn btn-style btn-style-link" role="button">
+                                                <div>
+                                                  <span class="btn-icon">
+                                                    <i class="flaticon maximize-2"></i>
+                                                  </span>
+                                                  <span class="btn-text">Expand</span>
+                                                </div> 
+                                              </a>
+                                            </li>
+                                            <li>
+                                              <a class="btn btn-style btn-style-link" role="button">
+                                                <div>
+                                                  <span class="btn-icon">
+                                                    <i class="flaticon download-2"></i>
+                                                  </span>
+                                                  <span class="btn-text">Download</span>
+                                                </div> 
+                                              </a>
+                                            </li>
+                                            <li>
+                                              <a class="btn btn-style btn-style-link" role="button">
+                                                <div>
+                                                  <span class="btn-icon">
+                                                    <i class="flaticon multiple-documents-1"></i>
+                                                  </span>
+                                                  <span class="btn-text">Copy Link</span>
+                                                </div> 
+                                              </a>
+                                            </li>
+                                            <li>
+                                              <a class="btn btn-style btn-style-link" role="button">
+                                                <div>
+                                                  <span class="btn-icon">
+                                                    <i class="flaticon trash-2"></i>
+                                                  </span>
+                                                  <span class="btn-text">Delete</span>
+                                                </div> 
+                                              </a>
+                                            </li>
+                                          </ul>
+                                        </div>
+                                      </div>
+                                      <!-- End card quick menu -->
+
+                                      <div class="card-row clearfix">
+                                        <div class="shareme-type-wrapper clearfix">
+                                          <div class="pull-left">
+                                            <img class="shareme-doc-type-img" src="../../assets/images/attach-type-icon.png" alt="">
+                                          </div>
+                                          <div class="pull-left">
+                                            <div class="shareme-type-txt1" style="word-wrap: break-word;">
+                                              <p>Document-name.pdf</p>
+                                            </div>
+                                            <p class="shareme-type-txt2">1.5mb</p>
+                                          </div>
+                                        </div>
+                                      </div>
+
+                                      <div class="card-row clearfix">
+                                        <div class="shareme-type-preview">
+                                          <div class="doc-preview">
+                                            <img src="../../assets/images/card-doc-preview-example.jpg" alt="">
+                                          </div>
+                                        </div>
+                                      </div>
+
+                                      <div class="card-row clearfix">
+                                        <ul class="pills-list clearfix">
+                                          <li>
+                                            <div class="display-table">
+                                              <div class="display-table-cell">
+                                                <a href="#">UX design</a>
+                                              </div>
+                                            </div>
+                                          </li>
+                                          <li>
+                                            <div class="display-table">
+                                              <div class="display-table-cell">
+                                                <a href="#">Responsive Layouts</a>
+                                              </div>
+                                            </div>
+                                          </li>
+                                          <li>
+                                            <div class="display-table">
+                                              <div class="display-table-cell">
+                                                <a href="#">Another skill tag</a>
+                                              </div>
+                                            </div>
+                                          </li>
+                                        </ul>
+                                      </div>
+
+                                      <div class="card-row">
+                                        <!-- Card Holder -->
+                                        <div class="card-holder">
+
+                                          <!-- Card quick menu -->
+                                          <div class="quick-menu-wrapper">
+                                            <a class="quick-menu-btn nav-btn-x">
+                                              <span class="navicon"></span>
+                                            </a>
+                                            <div class="quick-menu-holder">
+                                              <ul class="quick-menu">
+                                                <li>
+                                                  <a class="btn btn-style btn-style-link" role="button">
+                                                    <div>
+                                                      <span class="btn-icon">
+                                                        <i class="flaticon maximize-2"></i>
+                                                      </span>
+                                                      <span class="btn-text">Expand</span>
+                                                    </div> 
+                                                  </a>
+                                                </li>
+                                                <li>
+                                                  <a class="btn btn-style btn-style-link" role="button">
+                                                    <div>
+                                                      <span class="btn-icon">
+                                                        <i class="flaticon download-2"></i>
+                                                      </span>
+                                                      <span class="btn-text">Download</span>
+                                                    </div> 
+                                                  </a>
+                                                </li>
+                                                <li>
+                                                  <a class="btn btn-style btn-style-link" role="button">
+                                                    <div>
+                                                      <span class="btn-icon">
+                                                        <i class="flaticon multiple-documents-1"></i>
+                                                      </span>
+                                                      <span class="btn-text">Copy Link</span>
+                                                    </div> 
+                                                  </a>
+                                                </li>
+                                                <li>
+                                                  <a class="btn btn-style btn-style-link" role="button">
+                                                    <div>
+                                                      <span class="btn-icon">
+                                                        <i class="flaticon trash-2"></i>
+                                                      </span>
+                                                      <span class="btn-text">Delete</span>
+                                                    </div> 
+                                                  </a>
+                                                </li>
+                                              </ul>
+                                            </div>
+                                          </div>
+                                          <!-- End card quick menu -->
+
+                                          <div class="card-row clearfix">
+                                            <div class="user-wrapper display-table">
+                                              <div class="display-table-cell">
+                                                <span class="user-img-wrapper pull-left">
+                                                  <span class="user-img"></span>
+                                                </span>
+                                              </div>
+                                              <!-- Add /.full-width when card is extended (card width is fluid)-->
+                                              <div class="display-table-cell full-width">
+                                                <a class="user-txt1">Stoyan Daskaloff</a><br>
+                                                <p class="user-txt2">Seniour UI Designer @ Monimus</p>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div> <!-- /.card-holder -->
+                                      </div>
+                                    </div>
+                                  </li>
+
+                                  <li>
+                                    <div class="card-holder shareme">
+                                      <!-- Card quick menu -->
+                                      <div class="quick-menu-wrapper">
+                                        <a class="quick-menu-btn nav-btn-x">
+                                          <span class="navicon"></span>
+                                        </a>
+                                        <div class="quick-menu-holder">
+                                          <ul class="quick-menu">
+                                            <li>
+                                              <a class="btn btn-style btn-style-link" role="button">
+                                                <div>
+                                                  <span class="btn-icon">
+                                                    <i class="flaticon maximize-2"></i>
+                                                  </span>
+                                                  <span class="btn-text">Expand</span>
+                                                </div> 
+                                              </a>
+                                            </li>
+                                            <li>
+                                              <a class="btn btn-style btn-style-link" role="button">
+                                                <div>
+                                                  <span class="btn-icon">
+                                                    <i class="flaticon download-2"></i>
+                                                  </span>
+                                                  <span class="btn-text">Download</span>
+                                                </div> 
+                                              </a>
+                                            </li>
+                                            <li>
+                                              <a class="btn btn-style btn-style-link" role="button">
+                                                <div>
+                                                  <span class="btn-icon">
+                                                    <i class="flaticon multiple-documents-1"></i>
+                                                  </span>
+                                                  <span class="btn-text">Copy Link</span>
+                                                </div> 
+                                              </a>
+                                            </li>
+                                            <li>
+                                              <a class="btn btn-style btn-style-link" role="button">
+                                                <div>
+                                                  <span class="btn-icon">
+                                                    <i class="flaticon trash-2"></i>
+                                                  </span>
+                                                  <span class="btn-text">Delete</span>
+                                                </div> 
+                                              </a>
+                                            </li>
+                                          </ul>
+                                        </div>
+                                      </div>
+                                      <!-- End card quick menu -->
+
+                                      <div class="card-row clearfix">
+                                        <div class="shareme-type-wrapper">
+                                          <div class="shareme-type-txt1" style="word-wrap: break-word;">
+                                            <p>Page name goes here</p>
+                                          </div>
+                                        </div>
+                                      </div>
+
+                                      <div class="card-row clearfix">
+                                        <div class="shareme-type-preview">
+                                          <div class="page-preview clearfix" style="word-wrap: break-word;">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut dui sollicitudin, lobortis lectus sit amet, tristique metus. Fusce non neque at erat vestibulum fringilla. Etiam ornare massa nisi, eget facilisis dolor ultrices eget. Suspendisse tempus sem vel semper pulvinar. Quisque dictum dictum tellus vitae maximus. Nam ac nunc egestas dui sollicitudin luctus. Phasellus non libero et erat placerat tempor eu ac sem. Proin sit amet est ac mauris consequat feugiat a at leo. Nam nec ante sem. Cras sollicitudin finibus ex at fermentum. Phasellus maximus felis consequat ligula eleifend congue. In hac habitasse platea dictumst. Suspendisse eget quam metus. Suspendisse erat sem, interdum sed tincidunt sit amet, facilisis vel eros.In hac habitasse platea dictumst. Suspendisse eget quam metus. Suspendisse erat sem, interdum sed tincidunt sit amet, facilisis vel eros.
+                                            
+                                          </div>
+                                        </div>
+                                      </div>
+
+                                      <div class="card-row clearfix">
+                                        <ul class="pills-list clearfix">
+                                          <li>
+                                            <div class="display-table">
+                                              <div class="display-table-cell">
+                                                <a href="#">Skill</a>
+                                              </div>
+                                            </div>
+                                          </li>
+                                          <li>
+                                            <div class="display-table">
+                                              <div class="display-table-cell">
+                                                <a href="#">Tags</a>
+                                              </div>
+                                            </div>
+                                          </li>
+                                          <li>
+                                            <div class="display-table">
+                                              <div class="display-table-cell">
+                                                <a href="#">Go</a>
+                                              </div>
+                                            </div>
+                                          </li>
+                                          <li>
+                                            <div class="display-table">
+                                              <div class="display-table-cell">
+                                                <a href="#">Here</a>
+                                              </div>
+                                            </div>
+                                          </li>
+                                        </ul>
+                                      </div>
+
+                                      <div class="card-row">
+                                        <!-- Card Holder -->
+                                        <div class="card-holder">
+
+                                          <!-- Card quick menu -->
+                                          <div class="quick-menu-wrapper">
+                                            <a class="quick-menu-btn nav-btn-x">
+                                              <span class="navicon"></span>
+                                            </a>
+                                            <div class="quick-menu-holder">
+                                              <ul class="quick-menu">
+                                                <li>
+                                                  <a class="btn btn-style btn-style-link" role="button">
+                                                    <div>
+                                                      <span class="btn-icon">
+                                                        <i class="flaticon maximize-2"></i>
+                                                      </span>
+                                                      <span class="btn-text">Expand</span>
+                                                    </div> 
+                                                  </a>
+                                                </li>
+                                                <li>
+                                                  <a class="btn btn-style btn-style-link" role="button">
+                                                    <div>
+                                                      <span class="btn-icon">
+                                                        <i class="flaticon download-2"></i>
+                                                      </span>
+                                                      <span class="btn-text">Download</span>
+                                                    </div> 
+                                                  </a>
+                                                </li>
+                                                <li>
+                                                  <a class="btn btn-style btn-style-link" role="button">
+                                                    <div>
+                                                      <span class="btn-icon">
+                                                        <i class="flaticon multiple-documents-1"></i>
+                                                      </span>
+                                                      <span class="btn-text">Copy Link</span>
+                                                    </div> 
+                                                  </a>
+                                                </li>
+                                                <li>
+                                                  <a class="btn btn-style btn-style-link" role="button">
+                                                    <div>
+                                                      <span class="btn-icon">
+                                                        <i class="flaticon trash-2"></i>
+                                                      </span>
+                                                      <span class="btn-text">Delete</span>
+                                                    </div> 
+                                                  </a>
+                                                </li>
+                                              </ul>
+                                            </div>
+                                          </div>
+                                          <!-- End card quick menu -->
+
+                                          <div class="card-row clearfix">
+                                            <div class="user-wrapper display-table">
+                                              <div class="display-table-cell">
+                                                <span class="user-img-wrapper pull-left">
+                                                  <span class="user-img"></span>
+                                                </span>
+                                              </div>
+                                              <!-- Add /.full-width when card is extended (card width is fluid)-->
+                                              <div class="display-table-cell full-width">
+                                                <a class="user-txt1">Stoyan Daskaloff</a><br>
+                                                <p class="user-txt2">Seniour UI Designer @ Monimus</p>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div> <!-- /.card-holder -->
+                                      </div>
+                                    </div>
+                                  </li>
+                                </ul> <!-- col-lg-6 -->
+
+                                <ul class="col-lg-6">
+                                  <li>
+                                    <div class="card-holder shareme doc">
+                                      <!-- Card quick menu -->
+                                      <div class="quick-menu-wrapper">
+                                        <a class="quick-menu-btn nav-btn-x">
+                                          <span class="navicon"></span>
+                                        </a>
+                                        <div class="quick-menu-holder">
+                                          <ul class="quick-menu">
+                                            <li>
+                                              <a class="btn btn-style btn-style-link" role="button">
+                                                <div>
+                                                  <span class="btn-icon">
+                                                    <i class="flaticon maximize-2"></i>
+                                                  </span>
+                                                  <span class="btn-text">Expand</span>
+                                                </div> 
+                                              </a>
+                                            </li>
+                                            <li>
+                                              <a class="btn btn-style btn-style-link" role="button">
+                                                <div>
+                                                  <span class="btn-icon">
+                                                    <i class="flaticon download-2"></i>
+                                                  </span>
+                                                  <span class="btn-text">Download</span>
+                                                </div> 
+                                              </a>
+                                            </li>
+                                            <li>
+                                              <a class="btn btn-style btn-style-link" role="button">
+                                                <div>
+                                                  <span class="btn-icon">
+                                                    <i class="flaticon multiple-documents-1"></i>
+                                                  </span>
+                                                  <span class="btn-text">Copy Link</span>
+                                                </div> 
+                                              </a>
+                                            </li>
+                                            <li>
+                                              <a class="btn btn-style btn-style-link" role="button">
+                                                <div>
+                                                  <span class="btn-icon">
+                                                    <i class="flaticon trash-2"></i>
+                                                  </span>
+                                                  <span class="btn-text">Delete</span>
+                                                </div> 
+                                              </a>
+                                            </li>
+                                          </ul>
+                                        </div>
+                                      </div>
+                                      <!-- End card quick menu -->
+
+                                      <div class="card-row clearfix">
+                                        <div class="shareme-type-wrapper clearfix">
+                                          <div class="pull-left">
+                                            <img class="shareme-doc-type-img" src="../../assets/images/attach-type-icon.png" alt="">
+                                          </div>
+                                          <div class="pull-left">
+                                            <div class="shareme-type-txt1" style="word-wrap: break-word;">
+                                              <p>Document-name.pdf</p>
+                                            </div>
+                                            <p class="shareme-type-txt2">1.5mb</p>
+                                          </div>
+                                        </div>
+                                      </div>
+
+                                      <div class="card-row clearfix">
+                                        <div class="hor-line"></div>
+                                      </div>
+
+                                      <div class="card-row clearfix">
+                                        <ul class="pills-list clearfix">
+                                          <li>
+                                            <div class="display-table">
+                                              <div class="display-table-cell">
+                                                <a href="#">UX design</a>
+                                              </div>
+                                            </div>
+                                          </li>
+                                          <li>
+                                            <div class="display-table">
+                                              <div class="display-table-cell">
+                                                <a href="#">Responsive Layouts</a>
+                                              </div>
+                                            </div>
+                                          </li>
+                                          <li>
+                                            <div class="display-table">
+                                              <div class="display-table-cell">
+                                                <a href="#">Another skill tag</a>
+                                              </div>
+                                            </div>
+                                          </li>
+                                        </ul>
+                                      </div>
+
+                                      <div class="card-row">
+                                        <!-- Card Holder -->
+                                        <div class="card-holder">
+
+                                          <!-- Card quick menu -->
+                                          <div class="quick-menu-wrapper">
+                                            <a class="quick-menu-btn nav-btn-x">
+                                              <span class="navicon"></span>
+                                            </a>
+                                            <div class="quick-menu-holder">
+                                              <ul class="quick-menu">
+                                                <li>
+                                                  <a class="btn btn-style btn-style-link" role="button">
+                                                    <div>
+                                                      <span class="btn-icon">
+                                                        <i class="flaticon maximize-2"></i>
+                                                      </span>
+                                                      <span class="btn-text">Expand</span>
+                                                    </div> 
+                                                  </a>
+                                                </li>
+                                                <li>
+                                                  <a class="btn btn-style btn-style-link" role="button">
+                                                    <div>
+                                                      <span class="btn-icon">
+                                                        <i class="flaticon download-2"></i>
+                                                      </span>
+                                                      <span class="btn-text">Download</span>
+                                                    </div> 
+                                                  </a>
+                                                </li>
+                                                <li>
+                                                  <a class="btn btn-style btn-style-link" role="button">
+                                                    <div>
+                                                      <span class="btn-icon">
+                                                        <i class="flaticon multiple-documents-1"></i>
+                                                      </span>
+                                                      <span class="btn-text">Copy Link</span>
+                                                    </div> 
+                                                  </a>
+                                                </li>
+                                                <li>
+                                                  <a class="btn btn-style btn-style-link" role="button">
+                                                    <div>
+                                                      <span class="btn-icon">
+                                                        <i class="flaticon trash-2"></i>
+                                                      </span>
+                                                      <span class="btn-text">Delete</span>
+                                                    </div> 
+                                                  </a>
+                                                </li>
+                                              </ul>
+                                            </div>
+                                          </div>
+                                          <!-- End card quick menu -->
+
+                                          <div class="card-row clearfix">
+                                            <div class="user-wrapper display-table">
+                                              <div class="display-table-cell">
+                                                <span class="user-img-wrapper pull-left">
+                                                  <span class="user-img"></span>
+                                                </span>
+                                              </div>
+                                              <!-- Add /.full-width when card is extended (card width is fluid)-->
+                                              <div class="display-table-cell full-width">
+                                                <a class="user-txt1">Boiko Tikvata</a><br>
+                                                <p class="user-txt2">General</p>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div> <!-- /.card-holder -->
+                                      </div>
+                                    </div>
+                                  </li>
+
+                                  <li>
+                                    <div class="card-holder shareme media-card">
+                                      <!-- Card quick menu -->
+                                      <div class="quick-menu-wrapper">
+                                        <a class="quick-menu-btn nav-btn-x">
+                                          <span class="navicon"></span>
+                                        </a>
+                                        <div class="quick-menu-holder">
+                                          <ul class="quick-menu">
+                                            <li>
+                                              <a class="btn btn-style btn-style-link" role="button">
+                                                <div>
+                                                  <span class="btn-icon">
+                                                    <i class="flaticon maximize-2"></i>
+                                                  </span>
+                                                  <span class="btn-text">Expand</span>
+                                                </div> 
+                                              </a>
+                                            </li>
+                                            <li>
+                                              <a class="btn btn-style btn-style-link" role="button">
+                                                <div>
+                                                  <span class="btn-icon">
+                                                    <i class="flaticon download-2"></i>
+                                                  </span>
+                                                  <span class="btn-text">Download</span>
+                                                </div> 
+                                              </a>
+                                            </li>
+                                            <li>
+                                              <a class="btn btn-style btn-style-link" role="button">
+                                                <div>
+                                                  <span class="btn-icon">
+                                                    <i class="flaticon multiple-documents-1"></i>
+                                                  </span>
+                                                  <span class="btn-text">Copy Link</span>
+                                                </div> 
+                                              </a>
+                                            </li>
+                                            <li>
+                                              <a class="btn btn-style btn-style-link" role="button">
+                                                <div>
+                                                  <span class="btn-icon">
+                                                    <i class="flaticon trash-2"></i>
+                                                  </span>
+                                                  <span class="btn-text">Delete</span>
+                                                </div> 
+                                              </a>
+                                            </li>
+                                          </ul>
+                                        </div>
+                                      </div>
+                                      <!-- End card quick menu -->
+
+                                      <div class="card-row clearfix">
+                                        <div class="shareme-type-wrapper">
+                                          <div class="shareme-type-txt1" style="word-wrap: break-word;">
+                                            <p>Video-file-name-goes-here.mov</p>
+                                          </div>
+                                          <p class="shareme-type-txt2">3 mb</p>
+                                        </div>
+                                      </div>
+
+                                      <div class="card-row clearfix">
+                                        <div class="shareme-type-preview">
+                                          <div class="video-preview">
+                                            <img src="../../assets/images/card-video-preview-example.jpg" alt="">
+                                            <a class="card-play-btn">
+                                              <span></span>
+                                            </a>
+                                          </div>
+                                        </div>
+                                      </div>
+
+                                      <div class="card-row clearfix">
+                                        <ul class="pills-list clearfix">
+                                          <li>
+                                            <div class="display-table">
+                                              <div class="display-table-cell">
+                                                <a href="#">UX design</a>
+                                              </div>
+                                            </div>
+                                          </li>
+                                          <li>
+                                            <div class="display-table">
+                                              <div class="display-table-cell">
+                                                <a href="#">Responsive Layouts</a>
+                                              </div>
+                                            </div>
+                                          </li>
+                                          <li>
+                                            <div class="display-table">
+                                              <div class="display-table-cell">
+                                                <a href="#">Another skill tag</a>
+                                              </div>
+                                            </div>
+                                          </li>
+                                        </ul>
+                                      </div>
+
+                                      <div class="card-row">
+                                        <!-- Card Holder -->
+                                        <div class="card-holder">
+
+                                          <!-- Card quick menu -->
+                                          <div class="quick-menu-wrapper">
+                                            <a class="quick-menu-btn nav-btn-x">
+                                              <span class="navicon"></span>
+                                            </a>
+                                            <div class="quick-menu-holder">
+                                              <ul class="quick-menu">
+                                                <li>
+                                                  <a class="btn btn-style btn-style-link" role="button">
+                                                    <div>
+                                                      <span class="btn-icon">
+                                                        <i class="flaticon maximize-2"></i>
+                                                      </span>
+                                                      <span class="btn-text">Expand</span>
+                                                    </div> 
+                                                  </a>
+                                                </li>
+                                                <li>
+                                                  <a class="btn btn-style btn-style-link" role="button">
+                                                    <div>
+                                                      <span class="btn-icon">
+                                                        <i class="flaticon download-2"></i>
+                                                      </span>
+                                                      <span class="btn-text">Download</span>
+                                                    </div> 
+                                                  </a>
+                                                </li>
+                                                <li>
+                                                  <a class="btn btn-style btn-style-link" role="button">
+                                                    <div>
+                                                      <span class="btn-icon">
+                                                        <i class="flaticon multiple-documents-1"></i>
+                                                      </span>
+                                                      <span class="btn-text">Copy Link</span>
+                                                    </div> 
+                                                  </a>
+                                                </li>
+                                                <li>
+                                                  <a class="btn btn-style btn-style-link" role="button">
+                                                    <div>
+                                                      <span class="btn-icon">
+                                                        <i class="flaticon trash-2"></i>
+                                                      </span>
+                                                      <span class="btn-text">Delete</span>
+                                                    </div> 
+                                                  </a>
+                                                </li>
+                                              </ul>
+                                            </div>
+                                          </div>
+                                          <!-- End card quick menu -->
+
+                                          <div class="card-row clearfix">
+                                            <div class="user-wrapper display-table">
+                                              <div class="display-table-cell">
+                                                <span class="user-img-wrapper pull-left">
+                                                  <span class="user-img"></span>
+                                                </span>
+                                              </div>
+                                              <!-- Add /.full-width when card is extended (card width is fluid)-->
+                                              <div class="display-table-cell full-width">
+                                                <a class="user-txt1">Stoyan Daskaloff</a><br>
+                                                <p class="user-txt2">Seniour UI Designer @ Monimus</p>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div> <!-- /.card-holder -->
+                                      </div>
+                                    </div>
+                                  </li>
+                                </ul> <!-- col-lg-6 -->
+                              </div> <!-- row -->
+                                    
+                            </div> <!-- /.main-content-inner -->
+                          </div> <!-- /.ps-custom-scrollbar -->
+                        </div> <!-- /.ps-custom-holder -->
+                      </div> <!-- /.ps-custom-wrapper -->
+                    </section> <!-- /#main-content -->
+                  </div> <!-- /.display-table-row -->
+                </div> 
+              </div>
+              <!-- End Main Content Wrapper -->
+              
+              <div id="sidebars-wrapper" class="display-table-cell">
+                <div class="display-table">
+                  <!-- Second Sidebar menu -->
+                  <aside id="main-content-sidebar" class="display-table-cell">
+                    <div class="template ps-custom-scrollbar" data-template="../00_templates/03_ShareMe/sidebar-left-inner-open.html">
+                    </div>
+                  </aside>
+                  <!--End Second Sidebar menu -->
+
+                  <!-- Sidebar menu -->
+                  <aside id="left-menu-wrapper" class="display-table-cell">
+                    <div class="template ps-custom-scrollbar" data-template="../00_templates/03_ShareMe/sidebar-left-browse-all-content.html">
+                    </div>
+                  </aside>
+                  <!-- End Sidebar menu -->
+                </div>
+              </div>
+              <!-- sidebars-wrapper -->
+            </div>
+          </div>
+        </div>
+      </div>  
+    </div>  
+    
+    <script type="text/javascript" src="../../assets/js/loadScripts.js"></script>
+  </body>
+</html>

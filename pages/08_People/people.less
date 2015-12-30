@@ -1,0 +1,181 @@
+@import '../00_global/mixins.less';
+
+#people {
+
+  .input-field-container {
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .location-features {
+    > label {
+      margin-bottom: 16px;
+      padding-bottom: 9px;
+      border-bottom: 1px solid @borderColor;
+    }
+
+    fieldset {
+      display: block;
+      margin-bottom: 14px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .location-people-dropdown {
+    .dropdown-btn-wrapper {
+      background-color: #fcfcfc;
+      border: 2px solid @borderColor;
+    }
+
+    &.open {
+      .dropdown-btn-wrapper {
+        .border-radius(3px,3px,0,0);
+      }
+
+      .dropdown-list-wrapper {
+        display: block;
+        background-color: #fcfcfc;
+      }
+    }
+
+    .dropdown-list-wrapper {
+      display: none;
+      margin-bottom: 10px;
+      padding: 15px 0;
+      top: 39px;
+    }
+
+    .dropdown-item-wrapper {
+      margin-bottom: 17px;
+      padding: 0 16px;
+      font-size: 16px;
+
+      a {
+        color: @mainTextColor;
+        .transition(color);
+
+        &:hover {
+          color: #4d8e25;
+        }
+      }
+    }
+  }
+
+  .location-people-txt {
+    font-size: 14px;
+    font-weight: 600;
+    color: @mainTextColor;
+  }
+
+  &.directory {
+    #cards-wrapper {
+      position: relative;
+      > li {
+        position: absolute;
+      }
+    }
+
+    .card-invited-sent {
+      height: 110px;
+
+      > div {
+        text-align: center;
+
+        &:first-child {
+          height: 86px;
+          background-color: #eceff5;
+          border: 1px solid @borderColor;
+          border-top: none;
+          color: @mainTextColor;
+
+          b {
+            font-weight: 600;
+            padding-right: 7px;
+          }
+        }
+
+        &:last-child {
+          height: 24px;
+          background-color: #5d5d5d;
+          color: #fff;
+
+          a {
+            color: #fff;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  } // /.directory
+
+  &.new-department-form {
+    
+    .main-content-inner {
+      padding-top: 30px;
+    }
+  }
+
+  &.perm-change-promp {
+    .notification-wrapper {
+      width: auto;
+      right: @leftMenuWidth;
+
+      .title {
+        width: 50%;
+        padding-right: 40px;
+        border: none;
+        text-align: right;
+      }
+
+      .btn-list-holder-wrapper {
+        float: left;
+      }
+    }
+  }
+
+  &.add-someone-form {
+    .main-content-inner {
+      padding-top: 30px;
+
+      .step-creator-box {
+        .tsc-title {
+          margin: 0 0 5px 0;
+          padding: 0px;
+        }
+
+        p {
+          margin-bottom: 50px;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+  .main-content-inner {
+
+    .step-creator-box {
+      padding-top: 0px;
+
+      .top-card-wrapper {
+        margin: 0 -15px;
+      }
+
+      .tsc-title {
+        margin-bottom: 45px;
+        padding: 0 15px;
+        font-size: 26px;
+        font-weight: 400;
+      }
+
+      .card-holder {
+        margin-bottom: 0px;
+      }
+    }
+  } //main-content-inner
+
+} // /#people

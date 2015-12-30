@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=0.75, user-scalable=no">
+    <title>DES-582</title>  
+    <link rel="stylesheet" type="text/css" href="../../bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/perfect-scrollbar.min.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/tooltip-classic.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/application.css">
+
+    <script type="text/javascript" src="../../assets/js/head.load.min.js"></script>
+    <script type="text/javascript" src="../../assets/js/jquery-2.1.1.min.js"></script>
+  </head>
+  <body id="sessions" class="sessions-student">
+
+    <div id="main-wrapper" class="display-table">
+
+      <!-- Nav Bar Wrapper -->
+      <header id="main-header-wrapper" class="display-table-row template ie-header" data-template="../00_templates/02_sessions/mainHeader-session-details.html">
+      </header>
+      <!-- End Navbar Wrapper -->
+
+      <div class="display-table-row">
+        <div id="main-content-wrapper" class="display-table-cell ie-height-fix">
+          <div class="display-table">
+            <div class="display-table-row">
+
+              <!-- Main Content Wrapper -->
+              <div id="right-content-wrapper" class="display-table-cell">
+                <div id="right-content-inner">
+                  <div class="display-table">
+                
+                    <div class="video-chat-wrapper">
+                      <div class="display-table">
+                        <div class="display-table-cell">
+                          <div class="video-wrapper">
+                            <div class="video-chat">
+                              <a class="maximize-1">
+                                <span class="icon-holder flaticon stroke"></span>
+                              </a>
+                              <a class="microphone-2">
+                                <span class="icon-holder flaticon stroke"></span>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div> <!-- video-chat-wrapper -->
+
+                    <div class="display-table-row">
+                      <div class="ie-height-fix display-table-cell chat-msg-container">
+
+
+                        <div class="display-table">
+                          <div class="display-table-row">
+                            <div class="display-table-cell full-width vc-messages">
+                              <div class="ps-custom-wrapper">
+                                <div class="ps-custom-holder">
+                                  <div class="ps-custom-scrollbar">
+                                    <!-- Content Container -->
+                                    <div id="main-chat-wrapper">
+                                      <!-- Main Content -->
+                                      <div id="content-wrapper" class="chat-container resize-container">
+                                        <div id="content-inner" class="chat-wrapper ps-custom-scrollbar">
+                                          <div id="chat-top-space"></div>
+                                          <div class="container-fluid">
+                                            <div class="row chat-content template" data-template="../00_templates/02_sessions/chat-conversation.html">
+                                              <!-- Chat conversation is loaded by template file -->
+                                            </div>
+                                          </div>        
+                                        </div>     
+                                      </div>
+                                    </div><!-- End Content Contianer -->
+                                  </div>
+                                </div>
+                              </div> 
+
+                              <div id="chat-message-input-container" class="header-inner right-panel">
+                                <div class="chat-message-input container-fluid">
+                                  <div class="row">
+                                    <div class="display-table">
+                                      <div class="display-table-cell">
+
+                                        <div class="display-table input-holder">
+                                          <div class="display-table-cell">                                      
+                                            <div class="chat-info-icon" data-toggle="tooltip" data-placement="top" title="Text">
+                                            </div>
+                                          </div>
+                                          <div class="display-table-cell full-width">                                       
+                                            <input type="text" name="chat-input" class="chat-input full-width" placeholder="Type a message or drop a file ">
+                                          </div>
+                                          <div class="display-table-cell">
+                                            <a class="btn btn-style btn-style-primary" role="button">
+                                              <div>
+                                                <span class="btn-text">SEND</span>
+                                              </div> 
+                                            </a>
+                                          </div>
+                                          <div class="display-table-cell">
+                                            <a class="btn btn-style btn-style-default btn-line-none" role="button">
+                                              <div>
+                                                <span class="btn-icon">
+                                                  <i class="paperclip-1 flaticon grid-1"></i>
+                                                </span>
+                                              </div> 
+                                            </a>
+                                          </div>
+                                        </div>
+                                        <!-- Bottom left buttons -->
+                                        <div id="single-chat-btns" class="chat-btns chat-row">
+                                          <ul class="btn-list-holder display-table-cell">
+                                            <li>
+                                              <a class="btn btn-style btn-style-default" role="button">
+                                                <div>
+                                                  <span class="btn-icon">
+                                                    <i class="img-icon"></i>
+                                                  </span>
+                                                  <span class="btn-text">Reise Hand</span>
+                                                </div> 
+                                              </a>
+                                            </li>
+                                          </ul>
+                                        </div>
+                                        <!-- End bottom left buttons -->
+
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div> 
+                            </div>
+                            <div class="display-table-cell template vc-users" style="vertical-align: top;" data-template="../00_templates/02_sessions/chat-users-student.html">
+                              <!-- Right sidebar content -->
+                            </div>
+                          </div>
+                        </div>
+                      </div> 
+                    </div> 
+                  </div>
+                </div>
+                <!-- End Main Content Wrapper -->
+              </div>
+
+              <!-- Sidebar menu -->
+              <aside id="left-menu-wrapper" class="display-table-cell">
+                <div class="ps-custom-scrollbar template" data-template="../00_templates/02_sessions/sidebar-left-sessions-student.html"></div>
+              </aside>
+              <!-- End Sidebar menu -->
+
+            </div>
+          </div>
+        </div>  
+      </div>  
+      
+    <script type="text/javascript" src="../../assets/js/loadScripts.js"></script>
+  </body>
+</html>

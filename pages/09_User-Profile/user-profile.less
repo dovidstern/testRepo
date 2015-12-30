@@ -1,0 +1,118 @@
+@import '../00_global/mixins.less';
+
+#user-profile {
+
+  &.view-public-profile {
+
+    .top-card-profile {
+      padding: 50px;
+    }
+
+    .profile-block {
+
+      .pb-image {
+        display: block;
+        width: 250px;
+        height: 250px;
+        margin-right: 36px;
+        background: url('../images/profile-bg.jpg') no-repeat;
+        background-size: cover;
+        border: 1px solid #e1e1e1;
+        position: relative;
+
+        &:after {
+          display: block;
+          content: '';
+          width: 246px;
+          height: 2px;
+          border: 1px solid #e1e1e1;
+          border-top: none;
+          position: absolute;
+          bottom: -3px;
+          left: 1px;
+        }
+      }
+
+      .pb-name {
+        margin-bottom: 18px;
+        font-size: 48px;
+        font-weight: 300;
+        color: @mainTextColor;
+        line-height: 20px;
+      }
+
+      .pb-txt2 {
+        margin-bottom: 34px;
+        line-height: 20px;
+        color: @mainTextColor;
+      }
+
+      .pb-txt3 {
+        display: inline-block;
+        vertical-align: top;
+        line-height: 20px;
+        color: @mainTextColor;
+
+        i {
+          padding-right: 12px;
+        }
+      }
+
+      .pb-description {
+        margin-top: 44px;
+
+        > p {
+          font-size: 18px;
+          line-height: 26px;
+
+          > b {
+            font-weight: 700;
+          }
+        }
+      }
+    }
+
+    .big-block {
+      height: 180px;
+      background: #fff;
+      border: 1px solid @borderColor;
+      text-align: center;
+      position: relative;
+
+      .bb-icon {
+        display: table;
+        width: 50px;
+        height: 50px;
+        margin-left: -25px;
+        background-color: @hightLightColor;
+        color: #fff;
+        position: absolute;
+        top: -25px;
+        left: 50%;
+        .border-radius(50%,50%,50%,50%);
+
+        > div {
+          display: table-cell;
+          vertical-align: middle;
+          text-align: center;
+        }
+      }
+
+      .bb-count {
+        display: block;
+        padding-top: 74px;
+        padding-bottom: 25px;
+        font-size: 72px;
+        line-height: 26px;
+        color: @mainTextColor;
+        font-weight: 300;
+      }
+
+      .bb-link {
+        font-size: 18px;
+        line-height: 26px;
+        color: @linkColorText;
+      }
+    }
+  } // /.view-public-profile
+} //user-profile

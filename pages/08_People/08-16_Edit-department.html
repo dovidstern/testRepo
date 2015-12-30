@@ -1,0 +1,243 @@
+ <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=0.75, user-scalable=no">
+    <title>DES-609</title>  
+    <link rel="stylesheet" type="text/css" href="../../bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/perfect-scrollbar.min.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/tooltip-classic.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/application.css">
+
+    <script type="text/javascript" src="../../assets/js/head.load.min.js"></script>
+    <script type="text/javascript" src="../../assets/js/jquery-2.1.1.min.js"></script>
+  </head>
+  <body id="people" class="edit-department">
+
+    <div id="main-wrapper" class="display-table">
+
+      <!-- Nav Bar Wrapper -->
+      <header id="main-header-wrapper" class="display-table-row template ie-header" data-template="../00_templates/08_People/mainHeader-people.html">
+      </header>
+      <!-- End Navbar Wrapper -->
+      <div class="display-table-row">
+        <div id="main-content-wrapper" class="display-table-cell ie-height-fix">
+          <div class="display-table">
+            <div class="display-table-row">
+
+              <!-- Main Content Wrapper -->
+              <div id="right-content-wrapper" class="display-table-cell">
+                <div class="display-table">
+                  <!-- Secondary header wrapper -->
+                  <header class="ie-header display-table-row">
+                    <div id="secondary-header-wrapper" class="display-table-cell">
+                      <ol class="breadcrumb showdme-bredcrumb">
+                        <li>
+                          <a>Departments</a>
+                        </li>
+                        <li class="active"> Department Name</li>
+                      </ol>
+                    </div>
+                  </header>
+                  <!-- End Secondary header wrapper -->
+    
+                  <!-- Main Content -->
+                  <div class="display-table-row">
+                    <section id="main-content" class="display-table-cell vertical-top ie-height-fix">
+                      <div class="ps-custom-wrapper">
+                        <div class="ps-custom-holder">
+                          <div class="ps-custom-scrollbar">
+                            <div class="main-content-inner">
+                              <div class="step-creator-box">
+
+                                <div class="top-card-wrapper">
+                                  <div class="top-btn-line display-table">
+                                    <div class="display-table-cell">
+                                      <ul class="btn-list-holder pull-left">
+                                        <li>
+                                          <a class="btn btn-style btn-style-default btn-color-red" role="button">
+                                            <div>
+                                              <span class="btn-icon">
+                                                <i class="flaticon trash-2"></i>
+                                              </span>
+                                              <span class="btn-text">Delete</span>
+                                            </div> 
+                                          </a>   
+                                        </li>
+                                        <li>
+                                          <a class="btn btn-style btn-style-default btn-color-red" role="button">
+                                            <div>
+                                              <span class="btn-icon">
+                                                <i class="flaticon x-2"></i>
+                                              </span>
+                                              <span class="btn-text">Cancel</span>
+                                            </div> 
+                                          </a>   
+                                        </li>
+                                      </ul>
+                                      <ul class="btn-list-holder pull-right">
+                                        <li>
+                                          <a class="btn btn-style btn-style-primary" role="button">
+                                            <div>
+                                              <span class="btn-text">Save</span>
+                                            </div> 
+                                          </a>  
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <div class="input-field-container">
+                                  <label class="required">Department Name</label>
+                                  <input type="text" placeholder="Write here" required="" value="Deparment Name goes here">
+                                </div>
+
+                                <div class="input-field-container textarea">
+                                  <label class="required">Department Description</label>
+                                  <textarea placeholder="Write here"></textarea>
+                                </div>
+
+                                <div class="input-field-container">
+                                  <label class="required">Department Manager</label>
+                                  <div class="fake-input">
+                                    <ul class="tag-list">
+                                      <li class="display-table">
+                                        <a href="#" class="tag-name display-table-cell">
+                                          <span>Stoyan Daskaloff</span>
+                                        </a>
+                                        <a href="#" class="tag-remove display-table-cell"></a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+
+                                <div class="outer-header-card">
+                                  <h2 class="display-table-cell">Members ( 3 )</h2>
+                                </div>
+
+                                <div class="input-field-container">
+                                  <label>Add new Member</label>
+                                  <input type="text" required="">
+                                </div>
+
+                                <ul id="cards-wrapper" class="clearfix grid effect-3">
+                                  <li>
+                                    <div class="card-wrapper">
+                                      <!-- Card Holder -->
+                                      <div class="card-holder">
+
+                                        <!-- Card close btn -->
+                                        <a class="close-card-btn">
+                                          <i class="flaticon x-3"></i>
+                                        </a>
+                                        <!-- End Card close btn -->
+
+                                        <div class="card-row clearfix">
+                                          <div class="user-wrapper display-table">
+                                            <div class="display-table-cell">
+                                              <span class="user-img-wrapper pull-left">
+                                                <span class="user-img"></span>
+                                              </span>
+                                            </div>
+                                            <div class="display-table-cell">
+                                              <a class="user-txt1">Stoyan Daskaloff</a><br>
+                                              <p class="user-txt2">Seniour UI Designer @ Monimus</p>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div> <!-- /.card-holder -->
+                                    </div>
+                                  </li>
+                                   <li>
+                                    <div class="card-wrapper">
+                                      <!-- Card Holder -->
+                                      <div class="card-holder">
+
+                                        <!-- Card close btn -->
+                                        <a class="close-card-btn">
+                                          <i class="flaticon x-3"></i>
+                                        </a>
+                                        <!-- End Card close btn -->
+
+                                        <div class="card-row clearfix">
+                                          <div class="user-wrapper display-table">
+                                            <div class="display-table-cell">
+                                              <span class="user-img-wrapper pull-left">
+                                                <span class="user-img"></span>
+                                              </span>
+                                            </div>
+                                            <div class="display-table-cell">
+                                              <a class="user-txt1">Stoyan Daskaloff</a><br>
+                                              <p class="user-txt2">Seniour UI Designer @ Monimus</p>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div> <!-- /.card-holder -->
+                                    </div>
+                                  </li>
+                                   <li>
+                                    <div class="card-wrapper">
+                                      <!-- Card Holder -->
+                                      <div class="card-holder">
+
+                                        <!-- Card close btn -->
+                                        <a class="close-card-btn">
+                                          <i class="flaticon x-3"></i>
+                                        </a>
+                                        <!-- End Card close btn -->
+
+                                        <div class="card-row clearfix">
+                                          <div class="user-wrapper display-table">
+                                            <div class="display-table-cell">
+                                              <span class="user-img-wrapper pull-left">
+                                                <span class="user-img"></span>
+                                              </span>
+                                            </div>
+                                            <div class="display-table-cell">
+                                              <a class="user-txt1">Stoyan Daskaloff</a><br>
+                                              <p class="user-txt2">Seniour UI Designer @ Monimus</p>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div> <!-- /.card-holder -->
+                                    </div>
+                                  </li>
+                                </ul> <!-- /#cards-wrapper -->
+
+                              </div>
+                            </div> <!-- /.main-content-inner -->
+                          </div> <!-- /.ps-custom-scrollbar -->
+                        </div> <!-- /.ps-custom-holder -->
+                      </div> <!-- /.ps-custom-wrapper -->
+                    </section> <!-- /#main-content -->
+                  </div> <!-- /.display-table-row -->
+                  <!-- End Main Content -->
+                </div> <!-- /.display-table -->
+              </div> <!-- /#right-content-wrapper -->
+              <!-- End Main Content Wrapper -->
+              
+              <!-- Sidebars wrapper -->
+              <div id="sidebars-wrapper" class="display-table-cell">
+                <div class="display-table">
+                  <!-- Sidebar menu -->
+                  <aside id="left-menu-wrapper" class="display-table-cell">
+                    <div class="template ps-custom-scrollbar" data-template="../00_templates/08_People/sidebar-edit-department.html">
+                    </div>
+                  </aside>
+                  <!-- End Sidebar menu -->
+                </div> <!-- /.display-table -->
+              </div>
+              <!-- End Sidebars wrapper -->
+
+            </div> <!-- /.display-table-row -->
+          </div> <!-- /.display-table -->
+        </div> <!-- /#main-content-wrapper -->
+      </div> <!-- /.display-table-row -->
+    </div> <!-- /#main-wrapper --> 
+    
+    <script type="text/javascript" src="../../assets/js/loadScripts.js"></script>
+  </body>
+</html>

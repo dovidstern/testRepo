@@ -1,0 +1,186 @@
+@import '../00_global/mixins.less';
+
+#steps {
+
+  #secondary-header-wrapper {
+    .btn-list-holder {
+      .btn-separator {
+        margin-right: 61px;
+      }
+    }
+  }
+
+  .title-card-step {
+    padding: 50px;
+
+    .tcs-header {
+      margin-bottom: 34px;
+
+      .tsc-title {
+        margin-bottom: 8px;
+        font-size: 48px;
+        font-weight: 300;
+        
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 26px;
+      }
+
+      .last-update-txt {
+        display: block;
+        color: #8a8a8a;
+      }
+
+      .tsc-link {
+        display: inline-block;
+        margin-bottom: 10px;
+        color: @linkColorText;
+      }
+    }
+
+    .step-description {
+      margin-bottom: 39px;
+
+      p {
+        font-size: 18px;
+        color: @mainTextColor;
+        line-height: 26px;
+      }
+    }
+
+    .image-preview-wrapper {
+      display: inline-block;
+      max-width: 100%;
+      min-width: 480px;
+      margin: 0 auto;
+      padding: 10px;
+      background-color: #fff;
+      vertical-align: top;
+
+      figure {
+        display: table;
+        table-layout: fixed;
+
+        img {
+          max-width: 100%;
+        }
+
+        figcaption {
+          display: table-caption;
+          margin-top: 15px;
+          margin-bottom: 5px;
+          caption-side: bottom;
+        }
+      }
+    }
+  }
+
+  .file-preview-container {
+    margin: 0 -50px 27px -50px;
+    padding: 20px;
+    background-color: @borderColor;
+    text-align: center;
+
+    .img-responsive {
+      margin: 0 auto;
+    }
+
+    &.creator {
+      margin: 0 -15px 27px -15px;
+    }
+
+    > h1 {
+      padding: 143px 0;
+    }
+  }
+
+  .website-preview {
+    width: 145px;
+    height: 95px;
+    margin-right: 35px;
+    border: 1px solid @borderColor;
+    background: url('../images/card-links-preview-example.jpg');
+    background-size: cover;
+  }
+
+  &.learner-website-step {
+    .tcs-header {
+      .tsc-title {
+        margin-top: -10px;
+      }
+    }
+
+    .file-preview-container {
+      &.creator {
+        text-align: left;
+      }
+    }
+  }
+
+  &.learner-user-step {
+    .last-update-txt {
+      margin-top: 8px;
+    }
+  }
+
+  &.learner-image-step {
+
+    .title-card-step {
+
+      .tcs-header {
+        padding: 0 15px;
+      }
+    }    
+
+    .share-links {
+      color: @textLinkColor;
+    }
+
+    .enabled {
+      &:after {
+        content: none;
+      }
+    }
+  }
+
+  &.teacher-image-step {
+
+    .title-card-step {
+      padding-top: 0px;
+
+      .tcs-header {
+        padding: 0 15px;
+      }
+    }
+    
+    .enabled {
+      &:after {
+        content: none;
+      }
+    }
+  } //teacher-image-step
+
+  &.learner-overview {
+
+    .enabled {
+      &:after {
+        content: none;
+      }
+    }
+  }
+
+  &.teacher-overview {
+    
+    .title-card-step {
+      padding-top: 0px;
+    }
+
+    .enabled {
+      &:after {
+        content: none;
+      }
+    }
+  }
+} //steps

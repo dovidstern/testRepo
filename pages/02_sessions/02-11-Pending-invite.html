@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=0.75, user-scalable=no">
+    <title>DES-533</title>  
+    <link rel="stylesheet" type="text/css" href="../../bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/perfect-scrollbar.min.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/tooltip-classic.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/application.css">
+
+    <script type="text/javascript" src="../../assets/js/head.load.min.js"></script>
+    <script type="text/javascript" src="../../assets/js/jquery-2.1.1.min.js"></script>
+  </head>
+  <body id="sessions" class="pending-invite">
+
+    <div id="main-wrapper" class="display-table">
+
+      <!-- Nav Bar Wrapper -->
+      <header id="main-header-wrapper" class="display-table-row template ie-header" data-template="../00_templates/02_sessions/mainHeader-session-details.html">
+      </header>
+      <!-- End Navbar Wrapper -->
+      
+      <!-- Main Content Wrapper -->
+      <div class="display-table-row">
+        <div id="main-content-wrapper" class="ie-height-fix display-table-cell">
+          <div class="display-table">
+            <div class="display-table-row">
+              
+
+              <!-- Right Content Wrapper -->
+              <div id="right-content-wrapper" class="display-table-cell">
+                <div class="display-table">
+
+                  <!-- Secondary header wrapper -->
+                  <header class="display-table-row ie-header">
+                    <div id="secondary-header-wrapper" class="display-table-cell">
+
+                      <ul class="btn-list-holder pull-left">
+                        <li>
+                          <a class="btn btn-style btn-style-default" role="button">
+                            <div>
+                              <span class="btn-icon">
+                                <i class="flaticon left-4"></i>
+                              </span>
+                              <span class="btn-text">Return to Session</span>
+                            </div> 
+                          </a>
+                        </li>
+                        <li>
+                          <a class="btn btn-style btn-style-default" role="button">
+                            <div>
+                              <span class="btn-icon">
+                                <i class="flaticon send-1"></i>
+                              </span>
+                              <span class="btn-text">Resend invite</span>
+                            </div> 
+                          </a>
+                        </li>
+                        <li>
+                          <a class="btn btn-style btn-style-default btn-color-red count" role="button" data-single-text="Remove User" data-multiple-text="Remove Users">
+                            <div>
+                              <span class="btn-icon">
+                                <i class="flaticon x-2"></i>
+                              </span>
+                              <span class="btn-text">Remove User</span>
+                            </div> 
+                          </a>
+                        </li>
+                      </ul>
+
+                    </div>
+                  </header>
+                  <!-- End secondary header wrapper -->
+
+                  <!-- Main Content -->
+                  <div class="display-table-row">
+                    <div class="ie-height-fix display-table-cell">
+                      <section id="main-content" class="display-table">
+
+                        <div class="display-table-row">
+
+                          <section id="main-content-inner" class="content-right display-table-cell">
+                            <div class="ps-custom-wrapper">
+                              <div class="ps-custom-holder">
+                                <div class="ps-custom-scrollbar">
+                                  <div class="content-right-inner">
+                                  
+                                    <div class="card-holder zoomed pending-invite-card-holder">
+                                      <div class="card-row clearfix">
+                                        <div class="user-wrapper display-table">
+                                          <div class="user-img display-table-cell">
+                                            <span class="user-img-wrapper pull-left">
+                                              <span class="user-img"></span>
+                                            </span>
+                                          </div>
+                                          <div class="display-table-cell full-width">
+                                            <a class="user-txt1">Ahmed Shaygov</a><br>
+                                            <p class="user-txt2">a.shaygov@slicecrowd.com</p>
+                                          </div>
+
+                                          <div class="user-information display-table-cell">
+                                            <div class="display-table">
+                                              <div class="display-table-cell">
+                                                <span class="head">Invite sent</span><br>
+                                                <span>10.14.2014</span>
+                                              </div>
+                                            </div>
+                                          </div>
+
+                                          <div class="user-status user-information display-table-cell">
+                                            <div class="display-table">
+                                              <div class="display-table-cell">
+                                                <span class="head">Status</span><br>
+                                                <span>Waiting reply</span>
+                                              </div>
+                                            </div>
+                                          </div>
+
+                                        </div>
+                                      </div>
+                                    </div>
+
+                                  </div> <!-- .content-right-inner -->
+                                </div> <!-- .ps-custom-scrollbar -->
+                              </div> <!-- .ps-custom-holder -->
+                            </div> <!-- .ps-custom-wrapper -->
+                          </section> <!-- main-content-inner -->
+                        </div>
+                                          
+                      </section>
+                    </div>
+                  </div>
+                  <!-- End Main Content -->
+                </div>  
+              </div>
+              <!-- End Right Content Wrapper -->
+
+              <div id="sidebars-wrapper" class="display-table-cell">
+                <div class="display-table">
+                  <aside id="main-content-sidebar" class="display-table-cell">
+                    <div class="ps-custom-scrollbar template" data-template="../00_templates/02_sessions/3rd-sidebar-pending-invite.html">
+                      
+                    </div>
+                  </aside>
+
+                  <!-- Sidebar menu -->
+                  <aside id="left-menu-wrapper" class="display-table-cell">
+                    <div class="ps-custom-scrollbar template" data-template="../00_templates/02_sessions/sidebar-left-roster.html"></div>
+                  </aside>
+                  <!-- End Sidebar menu -->
+                </div>
+              </div>
+              <!-- sidebars-wrapper -->
+            </div>            
+
+          </div>
+        </div>
+      </div>
+      <!-- End Main Content Wrapper -->
+    </div>
+    <!-- End Main Wrapper -->       
+      
+    <script type="text/javascript" src="../../assets/js/loadScripts.js"></script>
+  </body>
+</html>

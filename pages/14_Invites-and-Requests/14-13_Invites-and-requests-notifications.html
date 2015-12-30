@@ -1,0 +1,458 @@
+ <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=0.75, user-scalable=no">
+    <title>DES-567</title>  
+    <link rel="stylesheet" type="text/css" href="../../bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/perfect-scrollbar.min.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/tooltip-classic.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/application.css">
+
+    <script type="text/javascript" src="../../assets/js/head.load.min.js"></script>
+    <script type="text/javascript" src="../../assets/js/jquery-2.1.1.min.js"></script>
+  </head>
+  <body id="invites-and-requests" class="create-session-from-request">
+
+    <div id="main-wrapper" class="display-table">
+
+      <!-- Nav Bar Wrapper -->
+      <header id="main-header-wrapper" class="display-table-row template ie-header" data-template="../00_templates/00_global/mainHeader.html">
+      </header>
+      <!-- End Navbar Wrapper -->
+      <div class="display-table-row">
+        <div id="main-content-wrapper" class="display-table-cell ie-height-fix">
+          <div class="display-table">
+            <div class="display-table-row">
+
+              <!-- Main Content Wrapper -->
+              <div id="right-content-wrapper" class="display-table-cell">
+                <div class="display-table">
+                  <!-- Secondary header wrapper -->
+                  <header class="ie-header display-table-row">
+                    <div id="secondary-header-wrapper" class="display-table-cell">
+                      <ul class="btn-list-holder pull-left">
+                        <li>
+                          <a class="btn btn-style btn-style-primary" role="button">
+                            <div>
+                              <span class="btn-icon">
+                                <i class="flaticon checkmark-2"></i>
+                              </span>
+                              <span class="btn-text">Create Session</span>
+                            </div> 
+                          </a>
+                        </li>
+                        <li>
+                          <a class="btn btn-style btn-style-default btn-color-red" role="button">
+                            <div>
+                              <span class="btn-icon">
+                                <i class="flaticon x-2"></i>
+                              </span>
+                              <span class="btn-text">Cancel</span>
+                            </div> 
+                          </a>
+                        </li>
+                      </ul>
+                      <ul class="btn-list-holder pull-right">
+                        <li>
+                          <a class="btn btn-style btn-style-default" role="button">
+                            <div>
+                              <span class="btn-icon">
+                                <i class="flaticon settings-2"></i>
+                              </span>
+                              <span class="btn-text">Advanced Options</span>
+                            </div> 
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </header>
+                  <!-- End secondary header wrapper -->
+
+                  <div class="display-table-row">
+                    <section id="main-content" class="display-table-cell vertical-top ie-height-fix">
+                      <div class="ps-custom-wrapper">
+                        <div class="ps-custom-holder">
+                          <div class="ps-custom-scrollbar">
+                            <div class="main-content-inner">
+
+                              <div class="card-holder-wrapper">
+                                <h1>Session request</h1>
+                                <!-- Card Holder -->
+                                <div class="card-holder">
+
+                                  <!-- Card quick menu -->
+                                  <div class="quick-menu-wrapper">
+                                    <a class="quick-menu-btn nav-btn-x">
+                                      <span class="navicon"></span>
+                                    </a>
+                                    <div class="quick-menu-holder">
+                                      <ul class="quick-menu">
+                                        <li>
+                                          <a class="btn btn-style btn-style-link" role="button">
+                                            <div>
+                                              <span class="btn-icon">
+                                                <i class="flaticon maximize-2"></i>
+                                              </span>
+                                              <span class="btn-text">Expand</span>
+                                            </div> 
+                                          </a>
+                                        </li>
+                                        <li>
+                                          <a class="btn btn-style btn-style-link" role="button">
+                                            <div>
+                                              <span class="btn-icon">
+                                                <i class="flaticon download-2"></i>
+                                              </span>
+                                              <span class="btn-text">Download</span>
+                                            </div> 
+                                          </a>
+                                        </li>
+                                        <li>
+                                          <a class="btn btn-style btn-style-link" role="button">
+                                            <div>
+                                              <span class="btn-icon">
+                                                <i class="flaticon multiple-documents-1"></i>
+                                              </span>
+                                              <span class="btn-text">Copy Link</span>
+                                            </div> 
+                                          </a>
+                                        </li>
+                                        <li>
+                                          <a class="btn btn-style btn-style-link" role="button">
+                                            <div>
+                                              <span class="btn-icon">
+                                                <i class="flaticon trash-2"></i>
+                                              </span>
+                                              <span class="btn-text">Delete</span>
+                                            </div> 
+                                          </a>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                  <!-- End card quick menu -->
+
+                                  <div class="card-row clearfix">
+                                    <div class="user-wrapper display-table">
+                                      <div class="display-table-cell">
+                                        <span class="user-img-wrapper pull-left">
+                                          <span class="user-img"></span>
+                                        </span>
+                                      </div>
+                                      <!-- Add /.full-width when card is extended (card width is fluid)-->
+                                      <div class="display-table-cell full-width">
+                                        <a class="user-txt1">Stoyan Daskaloff</a><span class="user-txt3"> is requesting a session with you</span><br>
+                                        <p class="user-txt2">Seniour UI Designer @ Monimus</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div> <!-- /.card-holder -->
+                              </div>  
+
+                              <div class="card-holder">
+                                  <div class="input-field-container warning-field">
+                                    <label class="required">Suggested Session Name</label>
+                                    <input type="text" placeholder="Title" value="Getting started" required="" class="">
+                                  </div>
+
+                                  <div class="input-field-container">
+                                    <div class="display-table">
+                                      <div class="display-table-cell full-width editor-container less-height">
+                                        <label class="required">Description</label>
+                                        <textarea id="steps-editor-1" class="textarea-editor" placeholder="Write here..."></textarea>
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                  <div class="input-field-container">
+                                    <label class="required">Skill tags</label>
+                                    <div class="fake-input">
+                                      <ul class="tag-list">
+                                        <li class="display-table">
+                                          <a href="#" class="tag-name display-table-cell">
+                                            <span>CSS</span>
+                                          </a>
+                                          <a href="#" class="tag-remove display-table-cell"></a>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </div>
+
+                                  <div role="tabpanel">
+
+                                    <!-- Nav tabs -->
+                                    <ul class="nav nav-tabs events-wrapper" role="tablist">
+                                      <li role="presentation" class="events-item active">
+                                        <a href="#home" aria-controls="home" role="tab" data-toggle="tab">
+                                          <span>One time event</span>
+                                        </a>
+                                      </li>
+                                      <li role="presentation" class="events-item">
+                                        <a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">
+                                          <span>Recurring event</span>
+                                        </a>
+                                      </li>
+                                    </ul>
+
+                                    <!-- Tab panes -->
+                                    <div class="tab-content">
+                                      <div role="tabpanel" class="tab-pane events-tab active" id="home">
+                                        <div class="row">
+                                          <div class="input-field-container col-lg-3">
+                                            <label class="required">Session date</label>
+                                            <div class="datepicker-wrapper">
+                                              <input type="text" id="datepicker" class="datepicker">
+                                            </div>  
+                                          </div>
+
+                                          <div class="input-field-container col-lg-3">
+                                            <label class="required">Start time</label>
+                                            <div class="start-time">
+                                              <input type="text">
+                                            </div>
+                                          </div>
+
+                                          <div class="input-field-container col-lg-3">
+                                            <label class="required">Duration</label>
+                                            <select class="dropdown-style">
+                                              <option>60 minutes</option>
+                                              <option>120 minutes</option>
+                                            </select>
+                                          </div>
+
+                                          <div class="input-field-container col-lg-3">
+                                            <label class="required">Registration deadline</label>
+                                            <div class="datepicker-wrapper">
+                                              <input type="text" id="datepicker-deadline" class="datepicker">
+                                            </div>
+                                          </div>
+                                        </div>
+
+                                      </div>
+                                      <div role="tabpanel" class="tab-pane events-tab" id="profile">
+                                        <div class="row">
+                                          <div class="input-field-container col-lg-3">
+                                            <label class="required">Session date</label>
+                                            <div class="datepicker-wrapper">
+                                              <input type="text" id="datepicker" class="datepicker">
+                                            </div>  
+                                          </div>
+
+                                          <div class="input-field-container col-lg-3">
+                                            <label class="required">Start time</label>
+                                            <div class="start-time">
+                                              <input type="text">
+                                            </div>
+                                          </div>
+
+                                          <div class="input-field-container col-lg-3">
+                                            <label class="required">Duration</label>
+                                            <select class="dropdown-style">
+                                              <option>60 minutes</option>
+                                              <option selected>120 minutes</option>
+                                            </select>
+                                          </div>
+
+                                          <div class="input-field-container col-lg-3">
+                                            <label class="required">Registration deadline</label>
+                                            <div class="datepicker-wrapper">
+                                              <input type="text" id="datepicker-deadline" class="datepicker">
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+
+                                  </div> <!-- tabpanel -->
+
+                              </div>
+
+                            </div> <!-- /.main-content-inner -->
+                          </div> <!-- /.ps-custom-scrollbar -->
+                        </div> <!-- /.ps-custom-holder -->
+                      </div> <!-- /.ps-custom-wrapper -->
+                    </section> <!-- /#main-content -->
+                  </div> <!-- /.display-table-row -->
+                </div> 
+                
+                <!-- Notifications -->
+
+                  <!-- Three types of notifications are displayed here. When you add a notification, make sure you add class "visible" after you add the "notification-wrapper" to reveal it with fade effect. Also class "display-none" is not needed and it`s included here just to hide the other notifications -->
+
+                  <div class="notification-wrapper visible">
+                    <div class="display-table">
+                      <div class="display-table-cell title">
+                        <span>Session Request</span>
+                      </div>
+                      <div class="display-table-cell full-width user-btn-wrapper">
+                        <div class="user">
+                          <div class="display-table">
+                            <div class="display-table-cell">
+                              <span class="image"></span>
+                            </div>
+                            <div class="display-table-cell">
+                              <span class="text"><b>George Balinov</b> would like to have s session with you</span>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="btn-list-holder-wrapper">
+                          <div class="display-table-cell">
+                            <ul class="btn-list-holder">
+                              <li>
+                                <a class="btn btn-style btn-style-default" role="button">
+                                  <div>
+                                    <span class="btn-icon">
+                                      <i class="flaticon group-1"></i>
+                                    </span>
+                                    <span class="btn-text">start new session</span>
+                                  </div> 
+                                </a>
+                              </li>
+                              <li>
+                                <a class="btn btn-style btn-style-default" role="button">
+                                  <div>
+                                    <span class="btn-icon">
+                                      <i class="flaticon calendar-3"></i>
+                                    </span>
+                                    <span class="btn-text">schedule one later</span>
+                                  </div> 
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="notification-wrapper display-none">
+                    <div class="display-table">
+                      <div class="display-table-cell title">
+                        <span>Invitation !</span>
+                      </div>
+                      <div class="display-table-cell full-width">
+                        <div class="user">
+                          <div class="display-table">
+                            <div class="display-table-cell">
+                              <span class="image"></span>
+                            </div>
+                            <div class="display-table-cell">
+                              <span class="text"><b>George Balinov</b> invited you to join <b>Session Name Goes Here</b></span>
+                            </div>
+                            <div class="display-table-cell">
+                              <a class="btn btn-style btn-style-link" role="button">
+                                <div>
+                                  <span class="btn-text">View details</span>
+                                  <span class="btn-icon">
+                                    <i class="flaticon right-4"></i>
+                                  </span>
+                                </div> 
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+
+                        <ul class="btn-list-holder pull-right">
+                          <li>
+                            <a class="btn btn-style btn-style-default" role="button">
+                              <div>
+                                <span class="btn-icon">
+                                  <i class="flaticon group-1"></i>
+                                </span>
+                                <span class="btn-text">join session</span>
+                              </div> 
+                            </a>
+                          </li>
+                          <li>
+                            <a class="btn btn-style btn-style-default btn-color-red" role="button">
+                              <div>
+                                <span class="btn-icon">
+                                  <i class="flaticon x-1"></i>
+                                </span>
+                                <span class="btn-text">reject</span>
+                              </div> 
+                            </a>
+                          </li>
+                        </ul>
+
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="notification-wrapper display-none">
+                    <div class="display-table">
+                      <div class="display-table-cell title">
+                        <span>Invitation !</span>
+                      </div>
+                      <div class="display-table-cell full-width">
+                        <div class="user">
+                          <div class="display-table">
+                            <div class="display-table-cell">
+                              <span class="image"></span>
+                            </div>
+                            <div class="display-table-cell">
+                              <span class="text"><b>George Balinov</b> invited you to join <b>Learning Path Name</b></span>
+                            </div>
+                            <div class="display-table-cell">
+                              <a class="btn btn-style btn-style-link" role="button">
+                                <div>
+                                  <span class="btn-text">view details</span>
+                                  <span class="btn-icon">
+                                    <i class="flaticon right-4"></i>
+                                  </span>
+                                </div> 
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+
+                        <ul class="btn-list-holder pull-right">
+                          <li>
+                            <a class="btn btn-style btn-style-default" role="button">
+                              <div>
+                                <span class="btn-icon">
+                                  <i class="flaticon see-all-1"></i>
+                                </span>
+                                <span class="btn-text">join learning path</span>
+                              </div> 
+                            </a>
+                          </li>
+                          <li>
+                            <a class="btn btn-style btn-style-default btn-color-red" role="button">
+                              <div>
+                                <span class="btn-icon">
+                                  <i class="flaticon x-1"></i>
+                                </span>
+                                <span class="btn-text">reject</span>
+                              </div> 
+                            </a>
+                          </li>
+                        </ul>
+
+                      </div>
+                    </div>
+                  </div>
+                <!-- End notifications -->
+
+              </div>
+              <!-- End Main Content Wrapper -->
+
+              <!-- Sidebar menu -->
+              <aside id="left-menu-wrapper" class="display-table-cell">
+                <div class="template ps-custom-scrollbar" data-template="../00_templates/14_Invites-and-Requests/sidebar-left-browse-all-sessions.html">
+                </div>
+              </aside>
+              <!-- End Sidebar menu -->
+            </div>
+          </div>
+        </div>
+      </div>  
+    </div>  
+    
+    <script type="text/javascript" src="../../assets/js/loadScripts.js"></script>
+  </body>
+</html>

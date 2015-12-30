@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=0.75, user-scalable=no">
+    <title>DES-527</title>  
+    <link rel="stylesheet" type="text/css" href="../../bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/perfect-scrollbar.min.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/tooltip-classic.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/application.css">
+
+    <script type="text/javascript" src="../../assets/js/head.load.min.js"></script>
+    <script type="text/javascript" src="../../assets/js/jquery-2.1.1.min.js"></script>
+  </head>
+  <body id="messages" class="thread">
+
+    <div id="main-wrapper" class="display-table">
+
+      <!-- Nav Bar Wrapper -->
+      <header id="main-header-wrapper" class="display-table-row template ie-header" data-template="../00_templates/05_messages/mainHeader-messages.html">
+      </header>
+      <!-- End Navbar Wrapper -->
+
+      <div class="display-table-row">
+        <div id="main-content-wrapper" class="display-table-cell ie-height-fix">
+          <div class="display-table">
+            <div class="display-table-row">
+
+              <!-- Main Content Wrapper -->
+              <div id="right-content-wrapper" class="display-table-cell">
+                <div class="display-table">
+
+                  <!-- Secondary header wrapper -->
+                  <header class="display-table-row ie-header">
+                    <div id="secondary-header-wrapper" class="display-table-cell">
+
+                      <ul class="btn-list-holder pull-left">                     
+                        <li>
+                          <a class="btn btn-style btn-style-primary" role="button">
+                            <div>
+                              <span class="btn-icon">
+                                <i class="flaticon reply-1"></i>
+                              </span>
+                              <span class="btn-text">Reply</span>
+                            </div> 
+                          </a>
+                        </li>
+                        <li>
+                          <a class="btn btn-style btn-style-default" role="button">
+                            <div>
+                              <span class="btn-text">Forward</span>
+                              <span class="btn-icon">
+                                <i class="flaticon forward-1"></i>
+                              </span>
+                            </div> 
+                          </a>
+                        </li>
+                        <li>
+                          <a class="btn btn-style btn-style-default btn-color-red" role="button">
+                            <div>
+                              <span class="btn-icon">
+                                <i class="flaticon trash-2"></i>
+                              </span>
+                              <span class="btn-text">Delete</span>
+                            </div> 
+                          </a>
+                        </li>
+                      </ul>
+
+
+                      <ul class="btn-list-holder pull-right">                     
+                        <li>
+                          <a class="btn btn-style btn-style-default" role="button">
+                            <div>
+                              <span class="btn-icon">
+                                <i class="flaticon left-4"></i>
+                              </span>
+                              <span class="btn-text">Prev</span>
+                            </div> 
+                          </a>
+                        </li>
+                        <li>
+                          <a class="btn btn-style btn-style-default" role="button">
+                            <div>
+                              <span class="btn-text">Next</span>
+                              <span class="btn-icon">
+                                <i class="flaticon right-4"></i>
+                              </span>
+                            </div> 
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </header>
+                  <!-- End secondary header wrapper -->
+
+                  <div class="display-table-row">
+                    <section id="main-content" class="display-table-cell ie-height-fix">
+                      <div class="ps-custom-wrapper">
+                        <div class="ps-custom-holder">
+                          <div class="ps-custom-scrollbar">
+                            <div class="main-content-inner">
+                              <div class="messages-container">
+                              <!-- View message -->
+                                <div class="view-message">
+                                  <div class="display-table">
+                                    <div class="display-table-cell full-width">
+                                      <div class="view-message-title">
+                                        <div class="display-table">
+                                          <div class="display-table-cell vertical-top">
+                                            <a class="favorite-icon"></a>
+                                          </div>
+                                          <div class="display-table-cell full-width">
+                                            <h2>Interface design</h2>
+                                            <span>1.16.2014 @ 16:53</span>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="display-table-cell">
+                                      <div class="card-holder text-width">
+
+                                        <!-- Card quick menu -->
+                                        <div class="quick-menu-wrapper">
+                                          <a class="quick-menu-btn nav-btn-x">
+                                            <span class="navicon"></span>
+                                          </a>
+                                          <div class="quick-menu-holder">
+                                            <ul class="quick-menu">
+                                              <li>
+                                                <a class="btn btn-style btn-style-link" role="button">
+                                                  <div>
+                                                    <span class="btn-icon">
+                                                      <i class="flaticon maximize-2"></i>
+                                                    </span>
+                                                    <span class="btn-text">Expand</span>
+                                                  </div> 
+                                                </a>
+                                              </li>
+                                              <li>
+                                                <a class="btn btn-style btn-style-link" role="button">
+                                                  <div>
+                                                    <span class="btn-icon">
+                                                      <i class="flaticon download-2"></i>
+                                                    </span>
+                                                    <span class="btn-text">Download</span>
+                                                  </div> 
+                                                </a>
+                                              </li>
+                                              <li>
+                                                <a class="btn btn-style btn-style-link" role="button">
+                                                  <div>
+                                                    <span class="btn-icon">
+                                                      <i class="flaticon multiple-documents-1"></i>
+                                                    </span>
+                                                    <span class="btn-text">Copy Link</span>
+                                                  </div> 
+                                                </a>
+                                              </li>
+                                              <li>
+                                                <a class="btn btn-style btn-style-link" role="button">
+                                                  <div>
+                                                    <span class="btn-icon">
+                                                      <i class="flaticon trash-2"></i>
+                                                    </span>
+                                                    <span class="btn-text">Delete</span>
+                                                  </div> 
+                                                </a>
+                                              </li>
+                                            </ul>
+                                          </div>
+                                        </div>
+                                        <!-- End card quick menu -->
+
+                                        <div class="card-row clearfix">
+                                          <div class="user-wrapper display-table">
+                                            <div class="display-table-cell">
+                                              <span class="user-img-wrapper pull-left">
+                                                <span class="user-img"></span>
+                                              </span>
+                                            </div>
+                                            <div class="display-table-cell">
+                                              <a class="user-txt1">Stoyan Daskaloff</a><br>
+                                              <p class="user-txt2">Seniour UI Designer @ Monimus</p>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div> <!-- /.card-holder -->
+                                    </div>
+                                  </div>
+                                  <p class="view-message-content">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque risus turpis, ornare id vestibulum in, rhoncus eu justo. Duis luctus nunc elementum viverra tristique. Sed mattis, diam vel ullamcorper elementum, lectus urna hendrerit lacus, nec mattis tellus mi a nisl. Nulla ultrices urna id tincidunt volutpat. Vestibulum quis tortor aliquet, semper odio ac, posuere dolor. Integer euismod diam id ipsum eleifend, at ultricies dolor interdum. In varius nulla quis dui aliquam ullamcorper. Nunc quis metus sed libero suscipit imperdiet quis volutpat ligula.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque risus turpis, ornare id vestibulum in, rhoncus eu justo.
+                                  </p>
+                                </div>
+                              <!-- End view message -->
+
+                              <!-- View message -->
+                                <div class="view-message sender">
+                                  <div class="display-table">
+                                    <div class="display-table-cell full-width">
+                                      <div class="view-message-title">
+                                        <div class="display-table">
+                                          <div class="display-table-cell vertical-top">
+                                            <a class="favorite-icon"></a>
+                                          </div>
+                                          <div class="display-table-cell full-width">
+                                            <h2>RE : Interface Design</h2>
+                                            <span><b>2 hours ago</b> ( 1.16.2014 @ 17:15 )</span>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="display-table-cell">
+                                      <a class="sender-image">
+                                        <span></span>
+                                      </a>
+                                    </div>
+                                  </div>
+                                  <p class="view-message-content">
+                                    Yep, I think so too
+                                  </p>
+                                </div>
+                              <!-- End view message -->
+
+                              <!-- View message -->
+                                <div class="view-message">
+                                  <div class="display-table">
+                                    <div class="display-table-cell full-width">
+                                      <div class="view-message-title">
+                                        <div class="display-table">
+                                          <div class="display-table-cell vertical-top">
+                                            <a class="favorite-icon"></a>
+                                          </div>
+                                          <div class="display-table-cell full-width">
+                                            <h2>RE : RE : Interface Design</h2>
+                                            <span><b>Just now</b> ( 1.16.2014 @ 17:15 )</span>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="display-table-cell">
+                                      <div class="card-holder text-width">
+
+                                        <!-- Card quick menu -->
+                                        <div class="quick-menu-wrapper">
+                                          <a class="quick-menu-btn nav-btn-x">
+                                            <span class="navicon"></span>
+                                          </a>
+                                          <div class="quick-menu-holder">
+                                            <ul class="quick-menu">
+                                              <li>
+                                                <a class="btn btn-style btn-style-link" role="button">
+                                                  <div>
+                                                    <span class="btn-icon">
+                                                      <i class="flaticon maximize-2"></i>
+                                                    </span>
+                                                    <span class="btn-text">Expand</span>
+                                                  </div> 
+                                                </a>
+                                              </li>
+                                              <li>
+                                                <a class="btn btn-style btn-style-link" role="button">
+                                                  <div>
+                                                    <span class="btn-icon">
+                                                      <i class="flaticon download-2"></i>
+                                                    </span>
+                                                    <span class="btn-text">Download</span>
+                                                  </div> 
+                                                </a>
+                                              </li>
+                                              <li>
+                                                <a class="btn btn-style btn-style-link" role="button">
+                                                  <div>
+                                                    <span class="btn-icon">
+                                                      <i class="flaticon multiple-documents-1"></i>
+                                                    </span>
+                                                    <span class="btn-text">Copy Link</span>
+                                                  </div> 
+                                                </a>
+                                              </li>
+                                              <li>
+                                                <a class="btn btn-style btn-style-link" role="button">
+                                                  <div>
+                                                    <span class="btn-icon">
+                                                      <i class="flaticon trash-2"></i>
+                                                    </span>
+                                                    <span class="btn-text">Delete</span>
+                                                  </div> 
+                                                </a>
+                                              </li>
+                                            </ul>
+                                          </div>
+                                        </div>
+                                        <!-- End card quick menu -->
+
+                                        <div class="card-row clearfix">
+                                          <div class="user-wrapper display-table">
+                                            <div class="display-table-cell">
+                                              <span class="user-img-wrapper pull-left">
+                                                <span class="user-img"></span>
+                                              </span>
+                                            </div>
+                                            <div class="display-table-cell">
+                                              <a class="user-txt1">Stoyan Daskaloff</a><br>
+                                              <p class="user-txt2">Seniour UI Designer @ Monimus</p>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div> <!-- /.card-holder -->
+                                    </div>
+                                  </div>
+                                  <p class="view-message-content">
+                                    Ok, tnx !
+                                  </p>
+                                </div>
+                              <!-- End view message -->
+
+                              </div>
+                            </div> <!-- /.main-content-inner -->
+                          </div> <!-- /.ps-custom-scrollbar -->
+                        </div> <!-- /.ps-custom-holder -->
+                      </div> <!-- /.ps-custom-wrapper -->
+                    </section> <!-- /#main-content -->
+                  </div> <!-- /.display-table-row -->
+                </div> <!-- /.display-table -->
+              </div> <!-- /.display-table-cell -->
+              <!-- End Main Content Wrapper -->
+
+              <!-- Sidebar menu -->
+              <aside id="left-menu-wrapper" class="display-table-cell">
+                <div class="template ps-custom-scrollbar" data-template="../00_templates/05_messages/sidebar-left-inbox-view-reply.html">
+                </div>
+              </aside>
+              <!-- End Sidebar menu -->
+
+            </div>
+          </div>
+        </div>
+      </div>  
+    </div>  
+    
+    <script type="text/javascript" src="../../assets/js/loadScripts.js"></script>
+  </body>
+</html>

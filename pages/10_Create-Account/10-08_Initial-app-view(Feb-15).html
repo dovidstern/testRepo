@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=0.75, user-scalable=no">
+    <title>DES-620</title>  
+    <link rel="stylesheet" type="text/css" href="../../bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/perfect-scrollbar.min.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/tooltip-classic.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/application.css">
+
+    <script type="text/javascript" src="../../assets/js/head.load.min.js"></script>
+    <script type="text/javascript" src="../../assets/js/jquery-2.1.1.min.js"></script>
+  </head>
+  <body id="create-account" class="initial-app-view">
+
+    <!-- Modal -->
+    <div class="modal fade" id="welcome-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="vertical-alignment-helper">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <a class="close-welcome-modal" role="button" data-dismiss="modal" aria-label="Close"></a>
+              <div class="welcome-modal-img"></div>
+              <h4 class="modal-title">Welcome to Showd.Me</h4>
+            </div>
+            <div class="modal-body">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mauris diam, ultricies vitae libero vitae, convallis eleifend libero. Pellentesque ac pharetra orci. In id leo erat. Integer dignissim accumsan nisl nec iaculis. Donec volutpat dolor ut nibh feugiat, id tristique odio feugiat. Quisque fermentum egestas rutrum. Donec mollis elit a neque cursus, at lacinia elit faucibus. Pellentesque pretium enim vitae turpis sodales vulputate. Proin vel blandit dui. Suspendisse vel eleifend felis. Quisque sagittis eros sit
+              </p>
+            </div>
+            <div class="modal-footer">
+              <div class="input-field-container textarea">
+                <textarea placeholder="Write a Replay..."></textarea>
+              </div>
+              <div class="display-table">
+                <div class="display-table-cell">
+                  <a class="btn btn-style btn-style-link" role="button">
+                    <div>
+                      <span class="btn-icon">
+                        <i class="flaticon paperclip-1"></i>
+                      </span>
+                      <span class="btn-text">Attach a file</span>
+                    </div> 
+                  </a>
+                </div>
+                <div class="display-table-cell">
+                  <a class="btn btn-style btn-style-primary" role="button">
+                    <div>
+                      <span class="btn-text">Send</span>
+                    </div> 
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div>
+    </div><!-- /.modal -->
+
+    <div id="main-wrapper" class="display-table">
+
+      <!-- Nav Bar Wrapper -->
+      <header id="main-header-wrapper" class="display-table-row template ie-header" data-template="../00_templates/00_global/mainHeader.html">
+      </header>
+      <!-- End Navbar Wrapper -->
+      <div class="display-table-row">
+        <div id="main-content-wrapper" class="display-table-cell ie-height-fix">
+          <div class="display-table">
+            <div class="display-table-row">
+
+              <!-- Main Content Wrapper -->
+              <div id="right-content-wrapper" class="display-table-cell">
+                <div class="display-table">
+                  <!-- Secondary header wrapper -->
+                  <header class="ie-header display-table-row">
+                    <div id="secondary-header-wrapper" class="display-table-cell">
+
+                      <ol class="breadcrumb showdme-bredcrumb">
+                        <li>
+                          <a>My Learning Paths</a>
+                        </li>
+                        <li>
+                          <a>ShowdMe Session Name</a>
+                        </li>
+                        <li class="active">Getting Started Overview</li>
+                      </ol>
+
+                    </div>
+                  </header>
+                  <!-- End secondary header wrapper -->
+
+                  <!-- Main Content -->
+                  <div class="display-table-row">
+                    <section id="main-content" class="display-table-cell vertical-top ie-height-fix">
+                      <div class="ps-custom-wrapper">
+                        <div class="ps-custom-holder">
+                          <div class="ps-custom-scrollbar">
+                            <div class="main-content-inner">
+                              <!-- Card Holder -->
+                              <div class="card-holder title-card-step">
+
+                                <div class="tcs-header card-row clearfix">
+                                  <div class="display-table">
+                                    <div class="display-table-cell full-width">
+                                      <h1 class="tsc-title">Getting started LP Overview</h1>
+                                    </div>
+                                    <div class="pie_progress display-table-cell" role="progressbar" data-goal="80" aria-valuemin="0" aria-valuemax="100">
+                                      <div class="pie_progress__number">0%</div>
+                                    </div>
+                                    <div class="steps-completed display-table-cell">
+                                     <span class="steps-num">3/5</span>
+                                     <span>steps completed</span>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <div class="card-row clearfix">
+                                  <div class="step-description">
+                                    <p>
+                                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris interdum luctus arcu. Vestibulum scelerisque elementum nunc, eget euismod diam pretium quis. Fusce vel semper lectus. In hac habitasse platea dictumst. Donec dui lorem, fermentum eu justo ac, elementum sodales orci. Curabitur eget dignissim odio, in tempor ex. Aenean maximus eros sed elit congue volutpat. Pellentesque ultrices, mauris in laoreet tempus, diam ipsum molestie sem, id volutpat justo nisl vel metus. <a class="inside-link">Inside Links will be underlined</a> Donec eget tortor eu odio pulvinar malesuada. Praesent vel ipsum id dui elementum varius a eget odio. Nam libero leo, vestibulum sit amet dictum et, malesuada at magna. Duis rutrum ipsum ut turpis viverra vehicula.
+                                    </p>
+                                  </div>
+                                </div>
+
+                                <div class="card-row clearfix">
+                                  <ul class="pills-list clearfix">
+                                    <h4 class="pills-list-name">Skills covered</h4>
+                                    <li>
+                                      <div class="display-table">
+                                        <div class="display-table-cell">
+                                          <a href="#">UX design</a>
+                                        </div>
+                                      </div>
+                                    </li>
+                                    <li>
+                                      <div class="display-table">
+                                        <div class="display-table-cell">
+                                          <a href="#">Responsive frameworks</a>
+                                        </div>
+                                      </div>
+                                    </li>
+                                    <li>
+                                      <div class="display-table">
+                                        <div class="display-table-cell">
+                                          <a href="#">UI</a>
+                                        </div>
+                                      </div>
+                                    </li>
+                                    <li>
+                                      <div class="display-table">
+                                        <div class="display-table-cell">
+                                          <a href="#">Progressive design</a>
+                                        </div>
+                                      </div>
+                                    </li>
+                                    <li>
+                                      <div class="display-table">
+                                        <div class="display-table-cell">
+                                          <a href="#">One more tag</a>
+                                        </div>
+                                      </div>
+                                    </li>
+                                    <li>
+                                      <div class="display-table">
+                                        <div class="display-table-cell">
+                                          <a href="#">Goes</a>
+                                        </div>
+                                      </div>
+                                    </li>
+                                  </ul>
+                                </div>
+                                <div class="separator-h35"></div>
+                                <div class="card-row clearfix">
+                                  <span class="card-manager-txt">Created by</span>
+                                  <!-- Card Holder -->
+                                  <div class="card-holder">
+        
+                                    <!-- Card quick menu -->
+                                    <div class="quick-menu-wrapper">
+                                      <a class="quick-menu-btn nav-btn-x">
+                                        <span class="navicon"></span>
+                                      </a>
+                                      <div class="quick-menu-holder">
+                                        <ul class="quick-menu">
+                                          <li>
+                                            <a class="btn btn-style btn-style-link" role="button">
+                                              <div>
+                                                <span class="btn-icon">
+                                                  <i class="flaticon maximize-2"></i>
+                                                </span>
+                                                <span class="btn-text">Expand</span>
+                                              </div> 
+                                            </a>
+                                          </li>
+                                          <li>
+                                            <a class="btn btn-style btn-style-link" role="button">
+                                              <div>
+                                                <span class="btn-icon">
+                                                  <i class="flaticon download-2"></i>
+                                                </span>
+                                                <span class="btn-text">Download</span>
+                                              </div> 
+                                            </a>
+                                          </li>
+                                          <li>
+                                            <a class="btn btn-style btn-style-link" role="button">
+                                              <div>
+                                                <span class="btn-icon">
+                                                  <i class="flaticon multiple-documents-1"></i>
+                                                </span>
+                                                <span class="btn-text">Copy Link</span>
+                                              </div> 
+                                            </a>
+                                          </li>
+                                          <li>
+                                            <a class="btn btn-style btn-style-link" role="button">
+                                              <div>
+                                                <span class="btn-icon">
+                                                  <i class="flaticon trash-2"></i>
+                                                </span>
+                                                <span class="btn-text">Delete</span>
+                                              </div> 
+                                            </a>
+                                          </li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                    <!-- End card quick menu -->
+
+                                    <div class="card-row clearfix">
+                                      <div class="user-wrapper display-table">
+                                        <div class="display-table-cell">
+                                          <span class="user-img-wrapper pull-left">
+                                            <span class="user-img"></span>
+                                          </span>
+                                        </div>
+                                        <div class="display-table-cell">
+                                          <a class="user-txt1">Stoyan Daskaloff</a><br>
+                                          <p class="user-txt2">Seniour UI Designer @ Monimus</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div> <!-- /.card-holder -->
+                                </div>
+                              </div> <!-- /.card-holder -->
+                              
+                            </div> <!-- /.main-content-inner -->
+                          </div> <!-- /.ps-custom-scrollbar -->
+                        </div> <!-- /.ps-custom-holder -->
+                      </div> <!-- /.ps-custom-wrapper -->
+                    </section> <!-- /#main-content -->
+                  </div> <!-- /.display-table-row -->
+                  <!-- End Main Content -->
+                </div> <!-- /.display-table -->
+              </div> <!-- /#right-content-wrapper -->
+              <!-- End Main Content Wrapper -->
+              
+              <!-- Sidebars wrapper -->
+              <div id="sidebars-wrapper" class="display-table-cell">
+                <div class="display-table">
+                  <!-- Second Sidebar menu -->
+                  <aside id="main-content-sidebar" class="display-table-cell wide">
+                    <div class="template ps-custom-scrollbar" data-template="../00_templates/13_Steps/sidebar-inner-learner-overview.html">
+                    </div>
+                  </aside>
+                  <!--End Second Sidebar menu -->
+
+                  <!-- Sidebar menu -->
+                  <aside id="left-menu-wrapper" class="display-table-cell">
+                    <div class="template ps-custom-scrollbar" data-template="../00_templates/13_Steps/sidebar-one-button.html">
+                    </div>
+                  </aside>
+                  <!-- End Sidebar menu -->
+                </div> <!-- /.display-table -->
+              </div>
+              <!-- End Sidebars wrapper -->
+
+            </div> <!-- /.display-table-row -->
+          </div> <!-- /.display-table -->
+        </div> <!-- /#main-content-wrapper -->
+      </div> <!-- /.display-table-row -->
+    </div> <!-- /#main-wrapper --> 
+    
+    <script type="text/javascript" src="../../assets/js/loadScripts.js"></script>
+  </body>
+</html>

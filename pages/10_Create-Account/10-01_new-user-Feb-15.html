@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=0.75, user-scalable=no">
+    <title>DES-613</title>  
+    <link rel="stylesheet" type="text/css" href="../../bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/perfect-scrollbar.min.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/tooltip-classic.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/application.css">
+
+    <script type="text/javascript" src="../../assets/js/head.load.min.js"></script>
+    <script type="text/javascript" src="../../assets/js/jquery-2.1.1.min.js"></script>
+  </head>
+  <body id="create-account" class="new-user">
+
+    <!-- Main Wrapper -->
+    <div id="main-wrapper" class="display-table">
+
+      <!-- Nav Bar Wrapper -->
+      <header class="display-table-row ie-header template"  data-template="../00_templates/10_Create-Account/create-account-header.html"></header>
+      <!-- End Navbar Wrapper -->
+
+      <!-- Main Content Wrapper -->
+      <div class="display-table-row">
+        <div id="main-content-wrapper" class="ie-height-fix display-table-cell">
+          <div class="ps-custom-wrapper">
+            <div class="ps-custom-holder">
+              <div class="ps-custom-scrollbar">
+                <div class="display-table">
+                  <div class="display-table-row">
+                    <div class="content-primary-row-wrapper display-table-cell">
+
+                      <section class="content-primary-row container">
+                        <div class="cpr-titles">
+                          <h2>Your People, Their Expertise, Unleashed !</h2>
+                        </div>
+
+                        <div class="signup-form-wrapper">
+                          <div class="display-table">
+                            <div class="suf-title display-table-cell">
+                              <span>Join your team on Showdme, or start your own !</span>
+                            </div>
+                          </div>
+                          <form class="signup-form">
+                            <!-- wrong mail message -->
+                            <div class="suf-wrong-mail hidden">
+                              <div class="display-table">
+                                <span class="display-table-cell">You must have a business email domain to create an organization</span>
+                              </div>
+                            </div>
+                              <!-- add .error for red border (wrong mail) -->
+                            <input class="suf-input-style" type="email" name="signup-email" placeholder="Email address">
+                            <fieldset class="suf-policy-chkbox checkbox-wrapper">
+                              <input type="checkbox" name="" id="privacy-policy">
+                              <label for="privacy-policy" class="display-table">
+                                <span class="display-table-cell">I agree to the <a>Cutomer Agreement</a> and <a>Privacy Policy.</a></span>
+                              </label>
+                            </fieldset>
+                            <a role="button" class="btn btn-style btn-style-navy full-width">
+                              <div>
+                                <span class="btn-text">Sign up for free</span>
+                              </div> 
+                            </a>
+                          </form>
+                        </div>
+                        <div class="bottom-link-support">
+                          <span>Problem signing in ? <a>Contact support.</a></span>
+                        </div>
+                      </section>
+
+                    </div> <!-- .display-table-cell -->
+                  </div> <!-- .display-table-row -->
+
+                  <!-- Footer Wrapper -->
+                  <footer class="display-table-row template" data-template="../00_templates/10_Create-Account/create-account-footer.html"></footer>
+                  <!-- End footer Wrapper -->
+
+                </div> <!-- .display-table -->
+              </div> <!-- .ps-custom-scrollbar -->
+            </div> <!-- .ps-custom-holder -->
+          </div> <!-- .ps-custom-wrapper -->
+        </div>
+      </div>
+      <!-- End Main Content Wrapper -->
+    </div>
+    <!-- End Main Wrapper --> 
+    
+    <script type="text/javascript" src="../../assets/js/loadScripts.js"></script>
+  </body>
+</html>
